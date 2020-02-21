@@ -716,7 +716,7 @@ function timeElapse(date){
         ie: 12,
         type: 'box',
         debug: false,
-        tip: "站点目前不支持 IE 请 ",
+        tip: "站点目前不支持 IE 请 ↓↓↓",
         show:['chrome','firefox','360','qq','opera']
       };
     </script>
@@ -782,12 +782,12 @@ function timeElapse(date){
 
 
 
-<script src="/js/debug.js"></script>
+<script src="//js/debug.js"></script>
 
 
     <script type="text/javascript">
         endebug(true, function () {
-            document.write("<p>网站 🦌?<br/> HTTP status code   405 not allowed  <br/>请刷新重试</p>");
+            document.write("<p>��վ ???<br/> HTTP status code   405 not allowed  <br/>��ˢ������</p>");
             document.write("<img src='https://errorpage.b0.upaiyun.com/zhd99ooc-403'/>");
 			
         });
@@ -800,7 +800,7 @@ function timeElapse(date){
 <link href="/resources/meuplayer/css/player.css" rel="stylesheet" type="text/css" />
 
 
-<div id="jp_container_N" class="jp-video jp-video-270p" role="application" aria-label="media player" style="left: 0px; height: 175px; bottom: 20px;">
+<div id="jp_container_N" style='display: none;' class="jp-video jp-video-270p" role="application" aria-label="media player" style="left: 0px; height: 175px; bottom: 20px;">
 	<div class="jp-type-playlist">
 		<div id="jquery_jplayer_N" class="jp-jplayer" style="width: 90px; height: 90px;">	<img id="jp_poster_0" style="width: 90px; height: 90px; display: inline;" src="http://p1.music.126.net/OCGt5ln0lPPtPbVJ3VEKtA==/109951163020570422.jpg?param=130y130">
 			<audio id="jp_audio_0" preload="metadata" src="http://music.163.com/song/media/outer/url?id=31473269.mp3" title="默"></audio>
@@ -895,6 +895,16 @@ function timeElapse(date){
 	$('.to-top').toTop();
 </script>
 
+
+
+
+　<script type="text/javascript">
+if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+}else{
+	// 懒得去改音乐播放自适应，移动设备关闭
+	$('#jp_container_N').css('display','block');
+}
+</script>
 
 
 	
