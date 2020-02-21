@@ -904,8 +904,11 @@ background:#FF0BEE;
 		padding: 5px;
 	}
 }
-@media screen and (max-width: 401px) {
+@media screen and (max-width: 521px) {
 	body {
+    font-size: 1rem;
+	}
+	h1,.h1{
     font-size: 1rem;
 	}
 }
