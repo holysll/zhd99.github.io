@@ -1,12 +1,95 @@
-> <center><a href="https://www.zhd99.cn"></a>揪蝉的日常 blog   </center>
+> <center><a href="https://www.dearmsdan.com"></a>hi mogul  blog   </center>
 
 
 
 
 
-###### 16:56 2020/2/13
+# **14:25 2020/2/21.**
+14:25 2020/2/21  hexo-theme-dearmsdan 进行样式性的更改 完毕   
 
-更新hexo dearmsdan主题
+新主题: hexo-theme-dearmsdan  
+新网站: www.dearmsdan.com  
+新名字: hi mogul  
+
+```
+├── _config.yml                 
+├── node_modules                
+├── package-lock.json        
+├── package.json                
+├── scaffolds                        
+├── source                            
+└── themes                            
+    ├── landscape                     // hexo 自带主题
+    └── dearmsdan                     // 自建的主题目录
+        ├── _config.yml               // 主题配置文件 (有详细介绍)
+        ├── README.md                 // 自述文件
+        ├── languages                 // 语言配置目录
+        │   └── zh-CN.yml             // 主页模板
+        ├── layout                    // 主要构造 html 的模板
+        │   ├── _partial              // 将layout 拆分的部分
+        │   │   ├── copyright.ejs     // 文章页脚版权声明 
+        │   │   ├── head.ejs          // head头部信息
+        │   │   ├── header.ejs        // 导航栏 
+        │   │   ├── search.ejs        // 全文搜索(需要安装2个相应的插件)
+        │   │   ├── paginator.ejs     // 分页块
+        │   │   ├── sidebar.ejs       // 遍历 _side（文件 的全部ejs 文件
+        │   │   └── footer.ejs        // 脚部模板
+        │   ├── _side                 // 将_partial中的sidebar的部分拆分
+        │   │   ├── tagcloud.ejs      // 标签归档
+        │   │   ├── recent_posts.ejs  // 最新文章归档 
+        │   │   ├── category.ejs      // 文章分类归档
+        │   │   └── archive.ejs       // 标签归档
+        │   ├── _plug                 // 添加与其他模板无影响插件
+        │   │   ├─ debug.ejs          // 偷窥代码提示
+        │   │   ├─ judge.ejs          // 低版本无法访问友情提示
+        │   │   ├─ meuplayer.ejs      // 音乐插件audio player 
+        │   │   └── unit.ejs          // 插件公共聚集地
+        │   ├── archive.ejs           // 归档模板
+        │   ├── index.ejs             // 主页模板(center
+        │   ├── layout.ejs            // 布局模板(入口
+        │   ├── links.ejs             // permalink模板(永久链接
+        │   └── post.ejs              // 文章模板 (md 编译成 html 后的文件模板
+        └── source                    // 静态资源文件目录
+        │   ├── 404.html              // 页面错误访问
+        │   ├── favicon.ico           // 网站访问小图标
+        │   ├── favicon.png           // 网站访问小图片
+        │   ├── loading-bg.png        // 加载背景
+        │   ├── logo.png              // logo图片
+        │   ├── Pexels.mp4            // 视频头像
+        │   ├── a.png                 // 正常访问鼠标
+        │   ├── link.png              // 正常访问鼠标
+        │   ├── css                   // css 样式目录
+        │   │   ├─ style.css          // 全局样式
+        │   │   ├─ avatar_user.css    // 自定义抖动css
+        │   │   ├─ bootstrap-3.3.4.css// bootstrap UI
+        │   │   ├─ post_content.css   // 文章统计样式
+        │   │   └─ social             // 社交按钮css
+        │   └── js                    // JavaScript 脚本目录
+        │   │   ├─ pjax               // 使用pjax 实现全站无刷新技术
+        │   │   ├─ top                // 回到顶部
+        │   │   ├─ app.js             // 全局js
+        │   │   ├─ bootstrap-3.3.4.js // bootstrap 框架库
+        │   │   ├─ debug.js           // 非法调试 检测
+        │   │   ├─ jquery.slimscroll.min.js // 滚动条
+        │   │   ├─ jquery1.10.2.min.js // jq库
+        │   │   ├─ s.js               // 搜索功能
+        │   │   └─ valine.js          // 使用的评论系统js
+        │   └── resources             // 存放每一个模块开发的静态资源
+        |   │   ├─ qiaoba.png         // 乔巴.png
+        |   │   ├─ jscex              // jscex相关库
+        |   │   ├─ loadingBar         // 加载功能
+        |   │   ├─ meuplayer          // 音乐插件
+        |   │   ├─ prettyPrint        // 代码高亮
+        |   │   ├─ preview-photo      // 放大图片
+        |   │   ├─ tochelper          // hexo目录插件（需要安装插件）
+        |   │   └─ dearmsdan_link     // 存放永久链接的静态资源
+        └── _test                     // 用于测试的一个模板(随意删除)
+            
+```
+
+
+
+
 
 # **22:45 2020/2/10**
 
