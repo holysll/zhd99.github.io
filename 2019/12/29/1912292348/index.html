@@ -643,85 +643,17 @@ function timeElapse(date){
 
 
 
-<link id="judgecs" rel="stylesheet" type="text/css" />
-<script id="judgejs"></script>
 
 <script>
-/*参数定义示例*/
-var browsehappy_config = {
-    //什么情况下提示
-    //可以为数字:7/8/9/10/11/12 即小于等于该IE版本的提示;12代表所有的ie版本都提示
-    //默认值:666 检测是否为现代浏览器,即ie版本小于等于9或其他低版本浏览器(粗略的说即不支持HTML5);推荐使用默认值,或直接注释掉
-    ie: 12,
-
-    //提示类型 [box|top|jump]
-    //box:弹出窗口 默认值
-    //top:顶部提示
-    //jump:直接跳转 不推荐
-    type:'box',
-
-    //调试模式 [false|true]
-    //false:不启用 默认值
-    //true:启用 即不检测浏览器版本,直接提示
-    debug:true,
-
-    //提示文字
-    tip:'iE浏览器加载很慢 · ↓ · tip不消失耐心等待(对IE不友好) ',
-    //box类型下,直接显示浏览器下载链接
-    //可选：360 chrome firefox ie11 opera qq
-    show:['chrome','firefox','360','qq','opera']
-};
-	// https://cdn01.osfipin.com/static/browsehappy.js
-	
-</script>
-<script id="brows"></script>
-
-<script>
- $(document).ready(function () {
-      // 获取IE版本
-      // 取得浏览器的userAgent字符串
-      var userAgent = navigator.userAgent;
-      // 判断是否为小于IE11的浏览器
-      var isLessIE11 = userAgent.indexOf('compatible') > -1 && userAgent.indexOf('MSIE') > -1;
-      // 判断是否为IE的Edge浏览器
-      var isEdge = userAgent.indexOf('Edge') > -1 && !isLessIE11;
-      // 判断是否为IE11浏览器
-      var isIE11 = userAgent.indexOf('Trident') > -1 && userAgent.indexOf('rv:11.0') > -1;
-      if (isLessIE11) {
-        var IEReg = new RegExp('MSIE (\\d+\\.\\d+);');
-        // 正则表达式匹配浏览器的userAgent字符串中MSIE后的数字部分，，这一步不可省略！！！
-        IEReg.test(userAgent);
-        // 取正则表达式中第一个小括号里匹配到的值
-        var IEVersionNum = parseFloat(RegExp['$1']);
-        if (IEVersionNum === 7) {
-          // IE7
-        } else if (IEVersionNum === 8) {
-          // IE8
-        } else if (IEVersionNum === 9) {
-          // IE9
-        } else if (IEVersionNum === 10) {
-          // IE10
-        } else {
-          // IE版本<7
-			
-        }
-      } else if (isEdge) { 
-		  Tipss();
-      } else if (isIE11) {
-        // IE11
-        Tipss();
-      } else {
-        // 不是ie浏览器
-      }
-    });
-    function Tipss() {
-		$('#brows').attr("src","//cdn01.osfipin.com/static/browsehappy.js");
-		$('#judgecs').attr("href","/css/judge.css");
-		$('#judgejs').attr("src","/js/judge.js");
-		
-    }
-</script>
-
+      var browsehappy_config = {
+        ie: 12,
+        type: 'box',
+        debug: false,
+        tip: "站点目前不支持 IE 请 ",
+        show:['chrome','firefox','360','qq','opera']
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/a632079/browserhappy@0.0.1/browserhappy.min.js"></script>
 
 
 
