@@ -1,7 +1,14 @@
 > <center><a href="https://www.dearmsdan.com"></a>hi mogul  blog   </center>
 
+###### 19:02 2020/4/4
 
+新增内容：
+		访问存储 ip 机制，新增 节日提示、网页diy 的初始构建
+		 添加 cookie 测试及应用存储
 
+修改内容：
+		整理 _plug 文件结构 ，添加 _diy 文件（设置节日 或 季节 及重要日子 diy ）
+		优化 toc-helper 目录生成插件
 
 
 # **14:25 2020/2/21.**
