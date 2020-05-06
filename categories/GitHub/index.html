@@ -1,22 +1,19 @@
-
-
 <!DOCTYPE html>
 <html>
     <!-- Head -->
-	
     
   
 
 <head>
-	<title>分类：GitHub -  hi mogul</title>
+	<title>count.categories：GitHub -  hi mogul</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<meta name="description" content="最好的收藏,不过是分享">
 	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-	<link rel="shortcut icon" href="/favicon.png" type="image/png" />
+	<link rel="shortcut icon" href="/logo.png" type="image/png" />
 	
 	
-	<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_1605171_frpek6nqy3j.css">
+	<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_1605171_vyrb401junl.css">
 	
 	<link rel="stylesheet" type="text/css" href="/css/bootstrap-3.3.4.css">
 	<link rel="stylesheet" href="/css/style.css">
@@ -25,8 +22,14 @@
 	
 	<link rel="stylesheet" type="text/css" href="/css/social/social.css">
 	
+	<link rel="stylesheet" href="/resources/dearmsdan_link/link.css">
 	
 	<link rel="stylesheet" type="text/css" href="/css/post_content.css">
+	
+	<link rel="stylesheet" type="text/css" href="/resources/toc/toc.css">  
+	
+  <script type="text/javascript" src="/js/copycode/clipboard.min.js"></script>  
+	
 	
 	
 	
@@ -38,35 +41,23 @@
 	
 	<script src="/js/s.js"></script>
 	
+	<script src="/resources/zoom/zoom.js"></script>
 	
-	<script src="/resources/loadingBar/pace.min.js"></script>
-	<link rel="stylesheet" href="/resources/loadingBar/flash.css">
-	
-	
-	<script src="/js/pjax/jquery.pjax.js"></script>
-	
-	<script src="/js/pjax/index.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
 	
 	<script src="/js/valine.js"></script>
 	
 	
-	<script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
+	<script src="/resources/loadingBar/pace.min.js"></script>
+	<script src="/js/headBand.min.js"></script>
+	<link rel="stylesheet" href="/resources/loadingBar/flash.css">
 	
 	
-	<link rel="stylesheet" href="/resources/dearmsdan_link/link.css">
+		 
+			<script src="/js/pjax/jquery.pjax.js"></script>
+		
+	<script src="/js/pjax/index.js"></script>
 	
-	
-	<link rel="stylesheet" href="/resources/prettyPrint/css/prettify.css">
-	<script src="/resources/prettyPrint/js/prettify.js"></script>
-	
-	
-	<link href="/resources/tochelper/toc-helper.min.css" rel="stylesheet" />
-	<script src="/resources/tochelper/toc-helper.min.js"></script>	
-	
-	
-	<link href="/resources/preview-photo/index.css" rel="stylesheet" />
-	<script src="/resources/preview-photo/index.js"></script>
-	<script src="/resources/preview-photo/preview-photo.js"></script>
 	
 </head>
 
@@ -74,11 +65,10 @@
 
 
 	
-    <!-- prettyPrint( 开启文章高亮  -->
-    <body onload="prettyPrint()">
+    <body>
+<div class="toping"></div>
 		<div id="dearmsdan">
 		<!-- Header -->
-		
 		
 <nav class="navbar navbar-default navbar-fixed-top">
 		<div class="brand"> 
@@ -136,45 +126,46 @@
 			<div class="sidebar-author">
 				<a href="/">
 					
-						<img src="Pexels.gif">
+						<img src="/Pexels.gif">
+						<img src="/logo.png">
 					
 				</a>
 			</div>
 			<nav>
 				
 				<div class="dearmsdan-count">
-					<span>文章</span>7
-					<span>标签</span>5
+					<span>文章</span>8
+					<span>标签</span>6
 					<span>分类</span>3
 				</div>		
 			<div class="social-btns">
 				
 				
-					<a class="btn GitHub" href="https://github.com/ZHD99/" target="_blank">
+					<a target="_blank" class="btn GitHub" href="https://github.com/ZHD99/">
 						
             		<i class="DearMsDanIconFont icon-git"></i>
 						
         			</a>
 				
-					<a class="btn email" href="/mailto:dearmsdan@outlook.com" target="_blank">
+					<a target="_blank" class="btn email" href="/outlook.html">
 						
             		<i class="DearMsDanIconFont icon-youxiang"></i>
 						
         			</a>
 				
-					<a class="btn netease" href="https://music.163.com/" target="_blank">
+					<a target="_blank" class="btn netease" href="https://music.163.com/">
 						
             		<i class="DearMsDanIconFont icon-netease"></i>
 						
         			</a>
 				
-					<a class="btn qq" href="https://wpa.qq.com/msgrd?v=3&uin=2646405301&site=qq&menu=yes" target="_blank">
+					<a target="_blank" class="btn qq" href="https://wpa.qq.com/msgrd?v=3&uin=2646405301&site=qq&menu=yes">
 						
             		<i class="DearMsDanIconFont icon-qq"></i>
 						
         			</a>
 				
-					<a class="btn weibo" href="https://weibo.com/" target="_blank">
+					<a target="_blank" class="btn weibo" href="https://weibo.com/">
 						
             		<i class="DearMsDanIconFont icon-weibo"></i>
 						
@@ -182,7 +173,9 @@
 				
 				</div>
 				
-					
+		 
+				
+				
 <div class="social-search">
 	<input id="local-search-input" />
 	<button class="DearMsDanIconFont icon-sousuo"></button>
@@ -196,6 +189,8 @@
 	 var path = "/" + search_path;
 	 searchFunc(path, 'local-search-input', 'local-search-result');
 </script>
+				
+		
 				<ul class="nav">	
 					<li>
 						<a target="_self" href="/" class="iframe_link active"><span>首页</span>
@@ -239,7 +234,7 @@
 
         <li>
           <a href="/categories/操作系统/">操作系统</a>
-          <span>1</span>
+          <span>2</span>
         </li>
 
         
@@ -259,7 +254,7 @@
     <div>
       <ul>
           <li>
-			  <a href="/tags/JAVA/" style="font-size: 10px;">JAVA</a> <a href="/tags/MySql/" style="font-size: 10px;">MySql</a> <a href="/tags/Windows/" style="font-size: 10px;">Windows</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a>
+			  <a href="/tags/JAVA/" style="font-size: 10px;">JAVA</a> <a href="/tags/MySql/" style="font-size: 10px;">MySql</a> <a href="/tags/Windows/" style="font-size: 10px;">Windows</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a>
           </li>
       </ul>
     </div>
@@ -290,7 +285,11 @@
       <ul>
         
           <li>
-            <a href="/2020/04/04/2004041716/">2020 抗击新冠肺炎疫情斗争牺牲烈士和逝世同胞的深切哀悼</a>
+            <a href="/2020/04/29/sys/linux/20200429/">Linux中查看jdk安装目录、卸载jdk、rpm命令、rm命令参数</a>
+          </li>
+        
+          <li>
+            <a href="/2020/04/04/course/20200404/">2020 抗击新冠肺炎疫情斗争牺牲烈士和逝世同胞的深切哀悼</a>
           </li>
         
           <li>
@@ -298,15 +297,11 @@
           </li>
         
           <li>
-            <a href="/2019/12/31/1912311726/">windows 禁止更新的问题</a>
+            <a href="/2019/12/31/sys/win/1912311726/">windows 禁止更新的问题</a>
           </li>
         
           <li>
-            <a href="/2019/12/30/1912300034/">java环境变量配置</a>
-          </li>
-        
-          <li>
-            <a href="/2019/12/30/1912301045/">windows My sql 解压版安装方法</a>
+            <a href="/2019/12/30/java/1912300034/">java环境变量配置</a>
           </li>
         
       </ul>
@@ -367,18 +362,16 @@
 
 
 
-			
 			<div class="main">
 				<div class="dearmsdan-bg"></div>
 				<div class="main-content">
 					
-					
 <div class="dearmsdan">
-	
 	<section class="dearmsdan-posts">
     
-    <div class="dearmsdan-post">
-        <a href="/2019/12/29/1912292348/">
+    <div class="dearmsdan-post" id="dearmsdanIndex">
+		
+        <a href="/2019/12/29/git/1912292348/">
             <div class="dearmsdan-title"> 
 				git Please tell me who you are.
             </div>
@@ -390,9 +383,7 @@
             
         </article>
         <div class="dearmsdan-post-Statistics">
-            <a><i></i>2019年12月29日</a>
-            <a><i></i>324 字</a>
-            <a><i></i>大概花费 1 分钟阅读</a>
+            <a>2019年12月29日</a>
             
                 <a class="category-link" href="/categories/GitHub/">GitHub</a>
             
@@ -400,27 +391,23 @@
                 <a class="tag-link" href="/tags/git/" rel="tag">git</a>
             
         </div>
+		
     </div>
     
-  </section>
+</section>
+	
 
-
-  
 
 
 <!--
         prev_text: '<i class="iconfont">&#xe617;</i>',
         next_text: '<i class="iconfont">&#xe627;</i>'
 -->
-	
-	
-	
-	
 </div>
     				
 					<!--<iframe src="a/index.html" class="iframe_mx uicss-cn"></iframe>-->
-		<!-- footer -->
-		
+					<!-- footer -->
+					
 	
 	<script src="/resources/jscex/jscex.min.js"></script>
 	<script src="/resources/jscex/jscex-parser.js"></script>
@@ -436,6 +423,7 @@
     	padding: 20px;
 		margin-top: 50px;
     	text-align: center;
+		font-size: inherit;
 }
 }
 	.footer{
@@ -448,9 +436,9 @@
 	.footer:hover{        
     	background: rgba(84, 76, 76, 0.08);
     	/*background-image: url('/resources/snow.gif')!important;*/
-    	background-size: contain!important;;
-    	border-radius: 50px;
-    	border: 2px solid #ffffff80;
+    	background-size: contain!important;
+		box-shadow: 0 4px 24px rgb(109, 108, 108);
+		transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 }
 	.footer a{
 		text-decoration: none;
@@ -573,7 +561,9 @@ function timeElapse(date){
 				</div>
 			</div>
 		</div>
-
+		
+		
+		
 	
 	
 
@@ -750,14 +740,6 @@ function timeElapse(date){
 <script src="/resources/meuplayer/player/player_database.js"></script>
 
 
-
-<div id="loading">
-	<div></div>
-	<div></div>
-	<span></span>
-</div>
-
-
 <script src="/js/top/jquery.toTop.min.js"></script>
 <a style="border-radius: 8px;display: none; padding: 0 10px; color: #fff; background-color: rgb(0, 84, 188);cursor: pointer; position: fixed; right: 15px; bottom: 30px; display: inline;" class="to-top">TOP</a>
 <script>
@@ -791,6 +773,144 @@ if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobi
 	Cookies.get('demo_Cookie');
 	
 </script>
+
+
+<style>
+.vditor-speech {    
+	position: absolute;
+    display: none;
+    background-color: #1d2125;
+    border: 1px solid #2ca9e6;
+    box-shadow: 0 0.3rem 2rem rgba(0, 255, 149, 0.6);
+    border-radius: 3px;
+    padding: 6px;
+    cursor: pointer;
+    color: #b9b9b9;
+        }
+.vditor-speech--current, .vditor-speech:hover {
+            color: #fff
+        }
+.vditor-speech svg {
+            height: 14px;
+            width: 14px;
+            fill: currentColor;
+            display: block;
+            stroke-width: 0;
+            stroke: currentColor;
+        }
+</style>
+<script>
+
+        (function(){try{var videos=document.getElementsByTagName('video');if(""!=videos&&videos.length>0){const players=Array.from(videos).map(p=>new Plyr(p));}
+$.getJSON("https://api.heycmm.cn/all/",function(data){const ap=new APlayer({container:document.getElementById("aplayer"),fixed:true,lrcType:3,preload:"auto",order:"random",listFolded:true,listMaxHeight:"165px",theme:"#e9e9e9",audio:data})});var days=parseInt((new Date().getTime()-new Date(document.querySelector(".published").innerText.replace(/ /g,"").replace(/-/g,"/")).getTime())/1000/60/60/24,10);days>90&&document.querySelector("#post-content").insertAdjacentHTML("afterBegin",['<blockquote style="border: 1px solid #6a737d;border-left: 5px solid #6a737d;line-height: 36px;">本文最后更新于 <code style="color: #FF5722;vertical-align: middle;">',days,"</code> 天前，其中的信息可能已经不够准确，请您酌情参考！</blockquote>"].join(""))}catch(e){}})();
+function speak(text){if(!isBlank(text)){var src="https://api.heycmm.cn/speak/"+text;if(src.length<=2083){var n=document.querySelector(".Audio-speech");if(!n){(n=document.createElement("AUDIO")).className="Audio-speech";}else{document.getElementById("audios").style.display="block";}
+n.setAttribute("id","audios");n.setAttribute("src",src);n.setAttribute("controls","controls");n.play()}}else{document.getElementById("audios").pause();document.getElementById("audios").style.display="none"}}
+function trim(str){if(str==null){return""}
+return str.toString().replace(/(^\s*)|(\s*$)|\r|\n/g,"")}
+function isBlank(str){if(str==null||trim(str)==""){return true}
+return false}
+var play_svg_1='<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">\n'+'<path d="M6 0v32l20-15.977-20-16.023z"></path>\n'+'</svg>\n';var pause_svg_1='<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">\n'+'<path d="M11 0h-6c-0.553 0-1 0.448-1 1v30c0 0.553 0.447 1 1 1h6c0.553 0 1-0.447 1-1v-30c0-0.552-0.447-1-1-1zM27 0h-6c-0.553 0-1 0.448-1 1v30c0 0.553 0.447 1 1 1h6c0.553 0 1-0.447 1-1v-30c0-0.552-0.447-1-1-1z"></path>\n'+'</svg>\n';var speechDom=document.querySelector(".vditor-speech");if(!speechDom){speechDom=document.createElement("div");speechDom.className="vditor-speech";document.body.insertAdjacentElement("beforeend",speechDom);speechDom.onclick=function(){if(speechDom.className==="vditor-speech"){var utterThis=speechDom.getAttribute("data-text");speak(utterThis);speechDom.className="vditor-speech vditor-speech--current";speechDom.innerHTML=pause_svg_1;}
+var selection=window.getSelection();selection.removeAllRanges();selection.addRange(window.vditorSpeechRange);};document.body.addEventListener("click",function(){if(getSelection().toString().trim()===""&&speechDom.style.display==="block"){speechDom.className="vditor-speech";speechSynthesis.cancel();speechDom.style.display="none";}});}
+document.addEventListener("mouseup",function(event){var text=getSelection().toString().trim();speechSynthesis.cancel();if(getSelection().toString().trim()===""){if(speechDom.style.display==="block"){speechDom.className="vditor-speech";speechDom.style.display="none";}
+return;}
+window.vditorSpeechRange=getSelection().getRangeAt(0).cloneRange();var rect=getSelection().getRangeAt(0).getBoundingClientRect();speechDom.innerHTML=play_svg_1;speechDom.style.display="block";speechDom.style.top=(rect.top+rect.height+document.querySelector("html").scrollTop-20)+"px";speechDom.style.left=(event.screenX+2)+"px";speechDom.setAttribute("data-text",text);});
+	
+	
+	// 。。。
+	
+/*	
+	   var play_svg_1 = '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">\n' +
+       '<path d="M6 0v32l20-15.977-20-16.023z"></path>\n' +
+       '</svg>\n';
+   var pause_svg_1 = '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">\n' +
+       '<path d="M11 0h-6c-0.553 0-1 0.448-1 1v30c0 0.553 0.447 1 1 1h6c0.553 0 1-0.447 1-1v-30c0-0.552-0.447-1-1-1zM27 0h-6c-0.553 0-1 0.448-1 1v30c0 0.553 0.447 1 1 1h6c0.553 0 1-0.447 1-1v-30c0-0.552-0.447-1-1-1z"></path>\n' +
+       '</svg>\n';
+    var speechDom = document.querySelector(".vditor-speech");
+    var lang = "zh_CN";
+    if (!speechDom) {
+        speechDom = document.createElement("div");
+        speechDom.className = "vditor-speech";
+        document.body.insertAdjacentElement("beforeend", speechDom);
+        var getVoice = function () {
+            var voices = speechSynthesis.getVoices();
+            var currentVoice;
+            var defaultVoice;
+            voices.forEach(function (item) {
+              if (item.lang === lang.replace("_", "-")) {
+                    currentVoice = item;
+                }
+                if (item["default"]) {
+                    defaultVoice = item;
+                }
+            });
+            if (!currentVoice) {
+                currentVoice = defaultVoice;
+            }
+            return currentVoice;
+        };
+        if (speechSynthesis.onvoiceschanged !== undefined) {
+            speechSynthesis.onvoiceschanged = getVoice;
+        }
+        var voice_1 = getVoice();
+        speechDom.onclick = function () {
+            if (speechDom.className === "vditor-speech") {
+                var utterThis = new SpeechSynthesisUtterance(speechDom.getAttribute("data-text"));
+                utterThis.voice = voice_1;
+                utterThis.onend = function () {
+                    speechDom.className = "vditor-speech";
+                    speechSynthesis.cancel();
+                    speechDom.innerHTML = play_svg_1;
+                };
+                speechSynthesis.speak(utterThis);
+                speechDom.className = "vditor-speech vditor-speech--current";
+                speechDom.innerHTML = pause_svg_1;
+            }
+            else {
+                if (speechSynthesis.speaking) {
+                    if (speechSynthesis.paused) {
+                        speechSynthesis.resume();
+                        speechDom.innerHTML = pause_svg_1;
+                    }
+                    else {
+                        speechSynthesis.pause();
+                        speechDom.innerHTML = play_svg_1;
+                    }
+                }
+            }
+            var selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(window.vditorSpeechRange);
+        };
+        document.body.addEventListener("click", function () {
+            if (getSelection().toString().trim() === "" && speechDom.style.display === "block") {
+                speechDom.className = "vditor-speech";
+                speechSynthesis.cancel();
+                speechDom.style.display = "none";
+            }
+        });
+    }
+   document.addEventListener("mouseup", function (event) {
+        var text = getSelection().toString().trim();
+        speechSynthesis.cancel();
+        if (getSelection().toString().trim() === "") {
+            if (speechDom.style.display === "block") {
+                speechDom.className = "vditor-speech";
+                speechDom.style.display = "none";
+            }
+            return;
+        }
+        window.vditorSpeechRange = getSelection().getRangeAt(0).cloneRange();
+        var rect = getSelection().getRangeAt(0).getBoundingClientRect();
+        speechDom.innerHTML = play_svg_1;
+        speechDom.style.display = "block";
+        speechDom.style.top = (rect.top + rect.height + document.querySelector("html").scrollTop - 20) + "px";
+        speechDom.style.left = (event.screenX + 2) + "px";
+        speechDom.setAttribute("data-text", text);
+    });*/
+</script>
+
+
+
 
 
 

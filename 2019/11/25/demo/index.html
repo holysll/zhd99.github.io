@@ -1,9 +1,6 @@
-
-
 <!DOCTYPE html>
 <html>
     <!-- Head -->
-	
     
   
 
@@ -13,10 +10,10 @@
 	<meta name="description" content="最好的收藏,不过是分享">
 	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-	<link rel="shortcut icon" href="/favicon.png" type="image/png" />
+	<link rel="shortcut icon" href="/logo.png" type="image/png" />
 	
 	
-	<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_1605171_frpek6nqy3j.css">
+	<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_1605171_vyrb401junl.css">
 	
 	<link rel="stylesheet" type="text/css" href="/css/bootstrap-3.3.4.css">
 	<link rel="stylesheet" href="/css/style.css">
@@ -25,8 +22,14 @@
 	
 	<link rel="stylesheet" type="text/css" href="/css/social/social.css">
 	
+	<link rel="stylesheet" href="/resources/dearmsdan_link/link.css">
 	
 	<link rel="stylesheet" type="text/css" href="/css/post_content.css">
+	
+	<link rel="stylesheet" type="text/css" href="/resources/toc/toc.css">  
+	
+  <script type="text/javascript" src="/js/copycode/clipboard.min.js"></script>  
+	
 	
 	
 	
@@ -38,35 +41,23 @@
 	
 	<script src="/js/s.js"></script>
 	
+	<script src="/resources/zoom/zoom.js"></script>
 	
-	<script src="/resources/loadingBar/pace.min.js"></script>
-	<link rel="stylesheet" href="/resources/loadingBar/flash.css">
-	
-	
-	<script src="/js/pjax/jquery.pjax.js"></script>
-	
-	<script src="/js/pjax/index.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
 	
 	<script src="/js/valine.js"></script>
 	
 	
-	<script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
+	<script src="/resources/loadingBar/pace.min.js"></script>
+	<script src="/js/headBand.min.js"></script>
+	<link rel="stylesheet" href="/resources/loadingBar/flash.css">
 	
 	
-	<link rel="stylesheet" href="/resources/dearmsdan_link/link.css">
+		 
+			<script src="/js/pjax/jquery.pjax.js"></script>
+		
+	<script src="/js/pjax/index.js"></script>
 	
-	
-	<link rel="stylesheet" href="/resources/prettyPrint/css/prettify.css">
-	<script src="/resources/prettyPrint/js/prettify.js"></script>
-	
-	
-	<link href="/resources/tochelper/toc-helper.min.css" rel="stylesheet" />
-	<script src="/resources/tochelper/toc-helper.min.js"></script>	
-	
-	
-	<link href="/resources/preview-photo/index.css" rel="stylesheet" />
-	<script src="/resources/preview-photo/index.js"></script>
-	<script src="/resources/preview-photo/preview-photo.js"></script>
 	
 </head>
 
@@ -74,11 +65,10 @@
 
 
 	
-    <!-- prettyPrint( 开启文章高亮  -->
-    <body onload="prettyPrint()">
+    <body>
+<div class="toping"></div>
 		<div id="dearmsdan">
 		<!-- Header -->
-		
 		
 <nav class="navbar navbar-default navbar-fixed-top">
 		<div class="brand"> 
@@ -136,45 +126,46 @@
 			<div class="sidebar-author">
 				<a href="/">
 					
-						<img src="Pexels.gif">
+						<img src="/Pexels.gif">
+						<img src="/logo.png">
 					
 				</a>
 			</div>
 			<nav>
 				
 				<div class="dearmsdan-count">
-					<span>文章</span>7
-					<span>标签</span>5
+					<span>文章</span>8
+					<span>标签</span>6
 					<span>分类</span>3
 				</div>		
 			<div class="social-btns">
 				
 				
-					<a class="btn GitHub" href="https://github.com/ZHD99/" target="_blank">
+					<a target="_blank" class="btn GitHub" href="https://github.com/ZHD99/">
 						
             		<i class="DearMsDanIconFont icon-git"></i>
 						
         			</a>
 				
-					<a class="btn email" href="/mailto:dearmsdan@outlook.com" target="_blank">
+					<a target="_blank" class="btn email" href="/outlook.html">
 						
             		<i class="DearMsDanIconFont icon-youxiang"></i>
 						
         			</a>
 				
-					<a class="btn netease" href="https://music.163.com/" target="_blank">
+					<a target="_blank" class="btn netease" href="https://music.163.com/">
 						
             		<i class="DearMsDanIconFont icon-netease"></i>
 						
         			</a>
 				
-					<a class="btn qq" href="https://wpa.qq.com/msgrd?v=3&uin=2646405301&site=qq&menu=yes" target="_blank">
+					<a target="_blank" class="btn qq" href="https://wpa.qq.com/msgrd?v=3&uin=2646405301&site=qq&menu=yes">
 						
             		<i class="DearMsDanIconFont icon-qq"></i>
 						
         			</a>
 				
-					<a class="btn weibo" href="https://weibo.com/" target="_blank">
+					<a target="_blank" class="btn weibo" href="https://weibo.com/">
 						
             		<i class="DearMsDanIconFont icon-weibo"></i>
 						
@@ -182,7 +173,9 @@
 				
 				</div>
 				
-					
+		 
+				
+				
 <div class="social-search">
 	<input id="local-search-input" />
 	<button class="DearMsDanIconFont icon-sousuo"></button>
@@ -196,6 +189,8 @@
 	 var path = "/" + search_path;
 	 searchFunc(path, 'local-search-input', 'local-search-result');
 </script>
+				
+		
 				<ul class="nav">	
 					<li>
 						<a target="_self" href="/" class="iframe_link active"><span>首页</span>
@@ -239,7 +234,7 @@
 
         <li>
           <a href="/categories/操作系统/">操作系统</a>
-          <span>1</span>
+          <span>2</span>
         </li>
 
         
@@ -259,7 +254,7 @@
     <div>
       <ul>
           <li>
-			  <a href="/tags/JAVA/" style="font-size: 10px;">JAVA</a> <a href="/tags/MySql/" style="font-size: 10px;">MySql</a> <a href="/tags/Windows/" style="font-size: 10px;">Windows</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a>
+			  <a href="/tags/JAVA/" style="font-size: 10px;">JAVA</a> <a href="/tags/MySql/" style="font-size: 10px;">MySql</a> <a href="/tags/Windows/" style="font-size: 10px;">Windows</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a>
           </li>
       </ul>
     </div>
@@ -290,7 +285,11 @@
       <ul>
         
           <li>
-            <a href="/2020/04/04/2004041716/">2020 抗击新冠肺炎疫情斗争牺牲烈士和逝世同胞的深切哀悼</a>
+            <a href="/2020/04/29/sys/linux/20200429/">Linux中查看jdk安装目录、卸载jdk、rpm命令、rm命令参数</a>
+          </li>
+        
+          <li>
+            <a href="/2020/04/04/course/20200404/">2020 抗击新冠肺炎疫情斗争牺牲烈士和逝世同胞的深切哀悼</a>
           </li>
         
           <li>
@@ -298,15 +297,11 @@
           </li>
         
           <li>
-            <a href="/2019/12/31/1912311726/">windows 禁止更新的问题</a>
+            <a href="/2019/12/31/sys/win/1912311726/">windows 禁止更新的问题</a>
           </li>
         
           <li>
-            <a href="/2019/12/30/1912300034/">java环境变量配置</a>
-          </li>
-        
-          <li>
-            <a href="/2019/12/30/1912301045/">windows My sql 解压版安装方法</a>
+            <a href="/2019/12/30/java/1912300034/">java环境变量配置</a>
           </li>
         
       </ul>
@@ -367,11 +362,9 @@
 
 
 
-			
 			<div class="main">
 				<div class="dearmsdan-bg"></div>
 				<div class="main-content">
-					
 					
 <div class="dearmsdan">
 	<div class="dearmsdan-post" id="dearmsdanPost">
@@ -379,9 +372,7 @@
 			<h1>markdown 如何编写文章.md</h1>
 		</div>
 	  <div id="post" class="dearmsdan-post-Statistics">
-		<a>2019年11月25日</a>
-		<a>1,203 字</a>
-		<a>大概花费 5 分钟阅读</a>
+            <a>2019年11月25日</a>
 		
 		  <a class=" -link" href="/categories/%E5%8D%9A%E5%AE%A2/">博客</a>
 		
@@ -390,48 +381,119 @@
 		
 	  </div>
 		
-		<div data-toc="#toc">
+		
+<div id="modal" style="display:none">
+
+<aside id="article-toc" class="fixed-toc">
+    <div id="article-toc-inner">
+        <strong class="sidebar-title">目录</strong>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#null"><span class="toc-text">markdown</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">Markdown 应用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">编辑器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">首页取文章概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">语法</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#null"><span class="toc-text">1.标题</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">1. 基本操作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#null"><span class="toc-text">1.1 内容目录</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#null"><span class="toc-text">1.2 标题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#null"><span class="toc-text">1.3 引用</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">2. 代码</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#null"><span class="toc-text">2.1 单行代码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#null"><span class="toc-text">2.2 多行代码</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">3. 列表</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#null"><span class="toc-text">3.1 无序列表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#null"><span class="toc-text">3.2 多行无序列表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#null"><span class="toc-text">3.3 有序列表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#null"><span class="toc-text">3.4 多行有序列表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#null"><span class="toc-text">3.5 任务列表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#null"><span class="toc-text">3.6 表格</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">4. 链接</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#null"><span class="toc-text">4.1 图片</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#null"><span class="toc-text">4.2 超链接</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">5. 其他</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#null"><span class="toc-text">5.1 斜体</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#null"><span class="toc-text">5.2 加粗</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#null"><span class="toc-text">5.3 下划线</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#null"><span class="toc-text">5.4 删除线</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#null"><span class="toc-text">5.5 分隔线</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#null"><span class="toc-text">5.6 注脚</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#null"><span class="toc-text">5.7 上下标</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#null"><span class="toc-text">5.8 符号的输入</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#null"><span class="toc-text">5.9 特殊字符</span></a></li></ol></li></ol></li></ol></li></ol>
+    </div>
+</aside>
+</div>
+
+
+		
+			<a href="#modal" class="second">
+				<div class="i">
+						<i style="font-size:20px" class="DearMsDanIconFont icon-sousuo">
+						<span style="font-size:0px"><br/>目<br/>录</span>
+						</i>
+				</div>
+			</a>
+
+
+
+
+<script>
+	$(".second .i").mouseover(function(){
+  $(".second .i span").css("font-size","18px");
+});
+	$(".second .i").mouseleave(function(){
+  $(".second .i span").css("font-size","0px");
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+	<script src="/resources/toc/jquery.pageslide.js"></script>
+		<div>
 			  <article>
 				<p>Markdown 的使用和快捷键方法.</p>
 <a id="more"></a>
-
-<div class="toc">
 
 <!-- toc -->
 
 <ul>
 <li><a href="#markdown"><strong>markdown</strong></a><ul>
-<li><a href="#markdown-ying-yong"><strong>Markdown 应用</strong></a></li>
-<li><a href="#bian-ji-qi"><strong>编辑器</strong></a></li>
-<li><a href="#shou-ye-qu-wen-zhang-gai-shu"><strong>首页取文章概述</strong></a></li>
-<li><a href="#yu-fa"><strong>语法</strong></a></li>
-<li><a href="#1-ji-ben-cao-zuo">1. 基本操作</a></li>
-<li><a href="#2-dai-ma">2. 代码</a></li>
-<li><a href="#3-lie-biao">3. 列表</a></li>
-<li><a href="#4-lian-jie">4. 链接</a></li>
-<li><a href="#5-qi-ta">5. 其他</a></li>
+<li><a href="#markdown-应用"><strong>Markdown 应用</strong></a></li>
+<li><a href="#编辑器"><strong>编辑器</strong></a></li>
+<li><a href="#首页取文章概述"><strong>首页取文章概述</strong></a></li>
+<li><a href="#语法"><strong>语法</strong></a><pre><code>* [1.标题](#1标题)</code></pre></li>
+<li><a href="#1-基本操作">1. 基本操作</a><ul>
+<li><a href="#11-内容目录">1.1 内容目录</a></li>
+<li><a href="#12-标题">1.2 标题</a></li>
+<li><a href="#13-引用">1.3 引用</a></li>
+</ul>
+</li>
+<li><a href="#2-代码">2. 代码</a><ul>
+<li><a href="#21-单行代码">2.1 单行代码</a></li>
+<li><a href="#22-多行代码">2.2 多行代码</a></li>
+</ul>
+</li>
+<li><a href="#3-列表">3. 列表</a><ul>
+<li><a href="#31-无序列表">3.1 无序列表</a></li>
+<li><a href="#32-多行无序列表">3.2 多行无序列表</a></li>
+<li><a href="#33-有序列表">3.3 有序列表</a></li>
+<li><a href="#34-多行有序列表">3.4 多行有序列表</a></li>
+<li><a href="#35-任务列表">3.5 任务列表</a></li>
+<li><a href="#36-表格">3.6 表格</a></li>
+</ul>
+</li>
+<li><a href="#4-链接">4. 链接</a><ul>
+<li><a href="#41-图片">4.1 图片</a></li>
+<li><a href="#42-超链接">4.2 超链接</a></li>
+</ul>
+</li>
+<li><a href="#5-其他">5. 其他</a><ul>
+<li><a href="#51-斜体">5.1 斜体</a></li>
+<li><a href="#52-加粗">5.2 加粗</a></li>
+<li><a href="#53-下划线">5.3 下划线</a></li>
+<li><a href="#54-删除线">5.4 删除线</a></li>
+<li><a href="#55-分隔线">5.5 分隔线</a></li>
+<li><a href="#56-注脚">5.6 注脚</a></li>
+<li><a href="#57-上下标">5.7 上下标</a></li>
+<li><a href="#58-符号的输入">5.8 符号的输入</a></li>
+<li><a href="#59-特殊字符">5.9 特殊字符</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 <!-- tocstop -->
 
-</div>
-
-
-<h1><span id="markdown"><strong>markdown</strong></span><a href="#markdown" class="header-anchor">#</a></h1><blockquote>
+<h1><span id="markdown"><strong>markdown</strong></span></h1><blockquote>
 <p>Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档<br>Markdown 语言在 2004 由约翰·格鲁伯（英语：John Gruber）创建。<br>Markdown 编写的文档可以导出 HTML 、Word、图像、PDF、Epub 等多种格式的文档。<br>Markdown 编写的文档后缀为 <strong>.md</strong>, <strong>.markdown</strong>。</p>
 </blockquote>
-<h2><span id="markdown-ying-yong"><strong>Markdown 应用</strong></span><a href="#markdown-ying-yong" class="header-anchor">#</a></h2><p>Markdown 能被使用来撰写电子书，如：Gitbook。</p>
+<h2><span id="markdown-应用"><strong>Markdown 应用</strong></span></h2><p>Markdown 能被使用来撰写电子书，如：Gitbook。</p>
 <p>当前许多网站都广泛使用 Markdown 来撰写帮助文档或是用于论坛上发表消息。例如：GitHub、简书、reddit、Diaspora、Stack Exchange、OpenStreetMap 、SourceForge等。</p>
 <hr>
-<h2><span id="bian-ji-qi"><strong>编辑器</strong></span><a href="#bian-ji-qi" class="header-anchor">#</a></h2><p>本教程将使用 Typora 编辑器来讲解 Markdown 的语法，Typora 支持 MacOS 、Windows、Linux 平台，且包含多种主题，编辑后直接渲染出效果。</p>
+<h2><span id="编辑器"><strong>编辑器</strong></span></h2><p>本教程将使用 Typora 编辑器来讲解 Markdown 的语法，Typora 支持 MacOS 、Windows、Linux 平台，且包含多种主题，编辑后直接渲染出效果。</p>
 <p>支持导出HTML、PDF、Word、图片等多种类型文件。</p>
 <p>Typora 官网：<a href="https://typora.io/" target="_blank" rel="noopener">https://typora.io/</a></p>
 <hr>
-<h2><span id="shou-ye-qu-wen-zhang-gai-shu"><strong>首页取文章概述</strong></span><a href="#shou-ye-qu-wen-zhang-gai-shu" class="header-anchor">#</a></h2><p>在Hexo 文章里使用</p>
+<h2><span id="首页取文章概述"><strong>首页取文章概述</strong></span></h2><p>在Hexo 文章里使用</p>
 <p><code><！--more--></！--more--></code> 可以设置首页文章概述标题</p>
 <p><code><！--toc--></！--toc--></code> 可以设置文章中的目录</p>
-<h2><span id="yu-fa"><strong>语法</strong></span><a href="#yu-fa" class="header-anchor">#</a></h2><h5><span id="1-biao-ti">1.标题</span><a href="#1-biao-ti" class="header-anchor">#</a></h5><p>通过标识符 <code>#</code>  与html h1 ~ h6 一致 ，个数越大字体越小，最大六级， 超过则显示为普通文本 </p>
+<h2><span id="语法"><strong>语法</strong></span></h2><h5><span id="1标题">1.标题</span></h5><p>通过标识符 <code>#</code>  与html h1 ~ h6 一致 ，个数越大字体越小，最大六级， 超过则显示为普通文本 </p>
 <pre><code class="markdown"> # 一级标题
  ## 二级标题
  ### 三级标题
@@ -439,12 +501,12 @@
  ##### 五级标题
  ###### 六级标题
  ####### 七级标题</code></pre>
-<h2><span id="1-ji-ben-cao-zuo">1. 基本操作</span><a href="#1-ji-ben-cao-zuo" class="header-anchor">#</a></h2><h4><span id="1-1-nei-rong-mu-lu">1.1 内容目录</span><a href="#1-1-nei-rong-mu-lu" class="header-anchor">#</a></h4><hr>
+<h2><span id="1-基本操作">1. 基本操作</span></h2><h4><span id="11-内容目录">1.1 内容目录</span></h4><hr>
 <ul>
 <li>语法</li>
 </ul>
 <pre><code class="json">&lt;！--toc--&gt;</code></pre>
-<h4><span id="1-2-biao-ti">1.2 标题</span><a href="#1-2-biao-ti" class="header-anchor">#</a></h4><hr>
+<h4><span id="12-标题">1.2 标题</span></h4><hr>
 <ul>
 <li>语法</li>
 </ul>
@@ -454,7 +516,7 @@
 ####    四级标题    
 #####   五级标题    
 ######  六级标题    </code></pre>
-<h4><span id="1-3-yin-yong">1.3 引用</span><a href="#1-3-yin-yong" class="header-anchor">#</a></h4><hr>
+<h4><span id="13-引用">1.3 引用</span></h4><hr>
 <ul>
 <li>语法</li>
 </ul>
@@ -470,7 +532,7 @@
 <p>引用内容3</p>
 </blockquote>
 </blockquote>
-<h2><span id="2-dai-ma">2. 代码</span><a href="#2-dai-ma" class="header-anchor">#</a></h2><h4><span id="2-1-dan-xing-dai-ma">2.1 单行代码</span><a href="#2-1-dan-xing-dai-ma" class="header-anchor">#</a></h4><hr>
+<h2><span id="2-代码">2. 代码</span></h2><h4><span id="21-单行代码">2.1 单行代码</span></h4><hr>
 <ul>
 <li>语法</li>
 </ul>
@@ -478,7 +540,7 @@
 <ul>
 <li>效果</li>
 </ul>
-<pre><code>String str1 = &quot;hello&quot;;</code></pre><h4><span id="2-2-duo-xing-dai-ma">2.2 多行代码</span><a href="#2-2-duo-xing-dai-ma" class="header-anchor">#</a></h4><hr>
+<pre><code>String str1 = &quot;hello&quot;;</code></pre><h4><span id="22-多行代码">2.2 多行代码</span></h4><hr>
 <ul>
 <li>语法</li>
 </ul>
@@ -491,7 +553,7 @@
 </ul>
 <pre><code class="java">int a = 10;
 int b = 20;</code></pre>
-<h2><span id="3-lie-biao">3. 列表</span><a href="#3-lie-biao" class="header-anchor">#</a></h2><h4><span id="3-1-wu-xu-lie-biao">3.1 无序列表</span><a href="#3-1-wu-xu-lie-biao" class="header-anchor">#</a></h4><hr>
+<h2><span id="3-列表">3. 列表</span></h2><h4><span id="31-无序列表">3.1 无序列表</span></h4><hr>
 <ul>
 <li>语法</li>
 </ul>
@@ -508,7 +570,7 @@ int b = 20;</code></pre>
 <li><p>无序列表3</p>
 </li>
 </ul>
-<h4><span id="3-2-duo-xing-wu-xu-lie-biao">3.2 多行无序列表</span><a href="#3-2-duo-xing-wu-xu-lie-biao" class="header-anchor">#</a></h4><hr>
+<h4><span id="32-多行无序列表">3.2 多行无序列表</span></h4><hr>
 <ul>
 <li>语法</li>
 </ul>
@@ -527,7 +589,7 @@ TAB TAB * 多行无序列表3</code></pre>
 </ul>
 </li>
 </ul>
-<h4><span id="3-3-you-xu-lie-biao">3.3 有序列表</span><a href="#3-3-you-xu-lie-biao" class="header-anchor">#</a></h4><hr>
+<h4><span id="33-有序列表">3.3 有序列表</span></h4><hr>
 <ul>
 <li>语法</li>
 </ul>
@@ -542,7 +604,7 @@ TAB TAB * 多行无序列表3</code></pre>
 <li>有序列表2</li>
 <li>有序列表3</li>
 </ol>
-<h4><span id="3-4-duo-xing-you-xu-lie-biao">3.4 多行有序列表</span><a href="#3-4-duo-xing-you-xu-lie-biao" class="header-anchor">#</a></h4><hr>
+<h4><span id="34-多行有序列表">3.4 多行有序列表</span></h4><hr>
 <ul>
 <li>语法</li>
 </ul>
@@ -565,7 +627,7 @@ TAB TAB * 多行无序列表3</code></pre>
 <li>多行有序列表3-1</li>
 <li>多行有序列表3-2</li>
 </ol>
-<h4><span id="3-5-ren-wu-lie-biao">3.5 任务列表</span><a href="#3-5-ren-wu-lie-biao" class="header-anchor">#</a></h4><hr>
+<h4><span id="35-任务列表">3.5 任务列表</span></h4><hr>
 <ul>
 <li>语法</li>
 </ul>
@@ -576,7 +638,7 @@ TAB TAB * 多行无序列表3</code></pre>
 <li>效果</li>
 </ul>
 <p>-[ ] 抽烟<br> -[x] 喝酒<br> -[ ] 烫头</p>
-<h4><span id="3-6-biao-ge">3.6 表格</span><a href="#3-6-biao-ge" class="header-anchor">#</a></h4><hr>
+<h4><span id="36-表格">3.6 表格</span></h4><hr>
 <ul>
 <li>语法</li>
 </ul>
@@ -616,7 +678,7 @@ TAB TAB * 多行无序列表3</code></pre>
 <td align="right">15876513546</td>
 </tr>
 </tbody></table>
-<h2><span id="4-lian-jie">4. 链接</span><a href="#4-lian-jie" class="header-anchor">#</a></h2><h4><span id="4-1-tu-pian">4.1 图片</span><a href="#4-1-tu-pian" class="header-anchor">#</a></h4><hr>
+<h2><span id="4-链接">4. 链接</span></h2><h4><span id="41-图片">4.1 图片</span></h4><hr>
 <ul>
 <li>语法1（<em>本地图片</em>）</li>
 </ul>
@@ -630,7 +692,7 @@ TAB TAB * 多行无序列表3</code></pre>
 </ul>
 <p><img src="https://cdn.dearmsdan.com/img/demo/Typora.jpg" alt="img"></p>
 <p>typora.jpg</p>
-<h4><span id="4-2-chao-lian-jie">4.2 超链接</span><a href="#4-2-chao-lian-jie" class="header-anchor">#</a></h4><hr>
+<h4><span id="42-超链接">4.2 超链接</span></h4><hr>
 <ul>
 <li>语法1（<em>行内式链接</em>）</li>
 </ul>
@@ -656,7 +718,7 @@ TAB TAB * 多行无序列表3</code></pre>
 <li>效果2</li>
 </ul>
 <p><a href="https://link.jianshu.com?t=https%3A%2F%2Fgithub.com%2F" target="_blank" rel="noopener">https://github.com/</a></p>
-<h2><span id="5-qi-ta">5. 其他</span><a href="#5-qi-ta" class="header-anchor">#</a></h2><h4><span id="5-1-xie-ti">5.1 斜体</span><a href="#5-1-xie-ti" class="header-anchor">#</a></h4><hr>
+<h2><span id="5-其他">5. 其他</span></h2><h4><span id="51-斜体">5.1 斜体</span></h4><hr>
 <ul>
 <li>语法</li>
 </ul>
@@ -666,7 +728,7 @@ _斜体_</code></pre>
 <li>效果</li>
 </ul>
 <p><em>斜体</em><br> <em>斜体</em></p>
-<h4><span id="5-2-jia-cu">5.2 加粗</span><a href="#5-2-jia-cu" class="header-anchor">#</a></h4><hr>
+<h4><span id="52-加粗">5.2 加粗</span></h4><hr>
 <ul>
 <li>语法</li>
 </ul>
@@ -676,7 +738,7 @@ __加粗__</code></pre>
 <li>效果</li>
 </ul>
 <p><strong>加粗</strong><br> <strong>加粗</strong></p>
-<h4><span id="5-3-xia-hua-xian">5.3 下划线</span><a href="#5-3-xia-hua-xian" class="header-anchor">#</a></h4><hr>
+<h4><span id="53-下划线">5.3 下划线</span></h4><hr>
 <ul>
 <li>语法</li>
 </ul>
@@ -685,7 +747,7 @@ __加粗__</code></pre>
 <li>效果</li>
 </ul>
 <p><u>下划线</u></p>
-<h4><span id="5-4-shan-chu-xian">5.4 删除线</span><a href="#5-4-shan-chu-xian" class="header-anchor">#</a></h4><hr>
+<h4><span id="54-删除线">5.4 删除线</span></h4><hr>
 <ul>
 <li>语法</li>
 </ul>
@@ -694,7 +756,7 @@ __加粗__</code></pre>
 <li>效果</li>
 </ul>
 <p><del>删除线</del></p>
-<h4><span id="5-5-fen-ge-xian">5.5 分隔线</span><a href="#5-5-fen-ge-xian" class="header-anchor">#</a></h4><hr>
+<h4><span id="55-分隔线">5.5 分隔线</span></h4><hr>
 <ul>
 <li>语法</li>
 </ul>
@@ -707,7 +769,7 @@ ___</code></pre>
 <hr>
 <hr>
 <hr>
-<h4><span id="5-6-zhu-jiao">5.6 注脚</span><a href="#5-6-zhu-jiao" class="header-anchor">#</a></h4><hr>
+<h4><span id="56-注脚">5.6 注脚</span></h4><hr>
 <ul>
 <li>语法</li>
 </ul>
@@ -717,7 +779,7 @@ ___</code></pre>
 <li>效果</li>
 </ul>
 <p>Typora<a href="#fn1">[1]</a></p>
-<h4><span id="5-7-shang-xia-biao">5.7 上下标</span><a href="#5-7-shang-xia-biao" class="header-anchor">#</a></h4><hr>
+<h4><span id="57-上下标">5.7 上下标</span></h4><hr>
 <ul>
 <li>语法</li>
 </ul>
@@ -730,7 +792,7 @@ $H_{2SO_4}$</code></pre>
 </ul>
 <p>$3^2=9$<br> $3^{(3-1)}=9$<br> $H_2SO_4$</p>
 <p>$H_{2SO_4}$</p>
-<h4><span id="5-8-fu-hao-de-shu-ru">5.8 符号的输入</span><a href="#5-8-fu-hao-de-shu-ru" class="header-anchor">#</a></h4><hr>
+<h4><span id="58-符号的输入">5.8 符号的输入</span></h4><hr>
 <ul>
 <li>语法</li>
 </ul>
@@ -750,7 +812,7 @@ $H_{2SO_4}$</code></pre>
 <li>效果</li>
 </ul>
 <p>\   `   *   _  { }  [ ]  ( )  #   +  -  .   !</p>
-<h4><span id="5-9-te-shu-zi-fu">5.9 特殊字符</span><a href="#5-9-te-shu-zi-fu" class="header-anchor">#</a></h4><hr>
+<h4><span id="59-特殊字符">5.9 特殊字符</span></h4><hr>
 <ul>
 <li>语法</li>
 </ul>
@@ -805,22 +867,6 @@ $(window).load(function(){
 
 			  </article>
 		</div>
-<script>
-$(function(){
-	
-	
-		// 可能是文章自动生成目录及侧边栏目录滚动特效的插件toc-helper
-		//new TocHelper().reload();
-	    new TocHelper().reset();
-	
-	
-});
-	
-$(document).on('ready pjax:end', function(event) {
-  new TocHelper().reset();
-})
-
-</script>
 		
 		
 	  
@@ -830,11 +876,14 @@ $(document).on('ready pjax:end', function(event) {
 
 <div class="copy">
 <i></i>
-<strong>本文作者：</strong>Hxx<br>
-<strong>本文链接：</strong><a href="https://www.dearmsdan.com/2019/11/25/demo/" title="https:&#x2F;&#x2F;www.dearmsdan.com&#x2F;2019&#x2F;11&#x2F;25&#x2F;demo&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;www.dearmsdan.com&#x2F;2019&#x2F;11&#x2F;25&#x2F;demo&#x2F;</a><br>
-
-  <strong>版权声明：</strong>本文采用 <a>....</a> 协议进行许可
-
+<strong>本文作者：</strong>
+	
+	 
+        测试小刘~<br>
+        
+	
+<strong>本文链接：</strong>
+	<a href="https://www.dearmsdan.com/2019/11/25/demo/" title="https:&#x2F;&#x2F;www.dearmsdan.com&#x2F;2019&#x2F;11&#x2F;25&#x2F;demo&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;www.dearmsdan.com&#x2F;2019&#x2F;11&#x2F;25&#x2F;demo&#x2F;</a><br>
 </div>
 
 	  
@@ -842,8 +891,8 @@ $(document).on('ready pjax:end', function(event) {
 </div>
     				
 					<!--<iframe src="a/index.html" class="iframe_mx uicss-cn"></iframe>-->
-		<!-- footer -->
-		
+					<!-- footer -->
+					
 	
 	<script src="/resources/jscex/jscex.min.js"></script>
 	<script src="/resources/jscex/jscex-parser.js"></script>
@@ -859,6 +908,7 @@ $(document).on('ready pjax:end', function(event) {
     	padding: 20px;
 		margin-top: 50px;
     	text-align: center;
+		font-size: inherit;
 }
 }
 	.footer{
@@ -871,9 +921,9 @@ $(document).on('ready pjax:end', function(event) {
 	.footer:hover{        
     	background: rgba(84, 76, 76, 0.08);
     	/*background-image: url('/resources/snow.gif')!important;*/
-    	background-size: contain!important;;
-    	border-radius: 50px;
-    	border: 2px solid #ffffff80;
+    	background-size: contain!important;
+		box-shadow: 0 4px 24px rgb(109, 108, 108);
+		transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 }
 	.footer a{
 		text-decoration: none;
@@ -996,7 +1046,9 @@ function timeElapse(date){
 				</div>
 			</div>
 		</div>
-
+		
+		
+		
 	
 	
 
@@ -1173,14 +1225,6 @@ function timeElapse(date){
 <script src="/resources/meuplayer/player/player_database.js"></script>
 
 
-
-<div id="loading">
-	<div></div>
-	<div></div>
-	<span></span>
-</div>
-
-
 <script src="/js/top/jquery.toTop.min.js"></script>
 <a style="border-radius: 8px;display: none; padding: 0 10px; color: #fff; background-color: rgb(0, 84, 188);cursor: pointer; position: fixed; right: 15px; bottom: 30px; display: inline;" class="to-top">TOP</a>
 <script>
@@ -1214,6 +1258,144 @@ if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobi
 	Cookies.get('demo_Cookie');
 	
 </script>
+
+
+<style>
+.vditor-speech {    
+	position: absolute;
+    display: none;
+    background-color: #1d2125;
+    border: 1px solid #2ca9e6;
+    box-shadow: 0 0.3rem 2rem rgba(0, 255, 149, 0.6);
+    border-radius: 3px;
+    padding: 6px;
+    cursor: pointer;
+    color: #b9b9b9;
+        }
+.vditor-speech--current, .vditor-speech:hover {
+            color: #fff
+        }
+.vditor-speech svg {
+            height: 14px;
+            width: 14px;
+            fill: currentColor;
+            display: block;
+            stroke-width: 0;
+            stroke: currentColor;
+        }
+</style>
+<script>
+
+        (function(){try{var videos=document.getElementsByTagName('video');if(""!=videos&&videos.length>0){const players=Array.from(videos).map(p=>new Plyr(p));}
+$.getJSON("https://api.heycmm.cn/all/",function(data){const ap=new APlayer({container:document.getElementById("aplayer"),fixed:true,lrcType:3,preload:"auto",order:"random",listFolded:true,listMaxHeight:"165px",theme:"#e9e9e9",audio:data})});var days=parseInt((new Date().getTime()-new Date(document.querySelector(".published").innerText.replace(/ /g,"").replace(/-/g,"/")).getTime())/1000/60/60/24,10);days>90&&document.querySelector("#post-content").insertAdjacentHTML("afterBegin",['<blockquote style="border: 1px solid #6a737d;border-left: 5px solid #6a737d;line-height: 36px;">本文最后更新于 <code style="color: #FF5722;vertical-align: middle;">',days,"</code> 天前，其中的信息可能已经不够准确，请您酌情参考！</blockquote>"].join(""))}catch(e){}})();
+function speak(text){if(!isBlank(text)){var src="https://api.heycmm.cn/speak/"+text;if(src.length<=2083){var n=document.querySelector(".Audio-speech");if(!n){(n=document.createElement("AUDIO")).className="Audio-speech";}else{document.getElementById("audios").style.display="block";}
+n.setAttribute("id","audios");n.setAttribute("src",src);n.setAttribute("controls","controls");n.play()}}else{document.getElementById("audios").pause();document.getElementById("audios").style.display="none"}}
+function trim(str){if(str==null){return""}
+return str.toString().replace(/(^\s*)|(\s*$)|\r|\n/g,"")}
+function isBlank(str){if(str==null||trim(str)==""){return true}
+return false}
+var play_svg_1='<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">\n'+'<path d="M6 0v32l20-15.977-20-16.023z"></path>\n'+'</svg>\n';var pause_svg_1='<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">\n'+'<path d="M11 0h-6c-0.553 0-1 0.448-1 1v30c0 0.553 0.447 1 1 1h6c0.553 0 1-0.447 1-1v-30c0-0.552-0.447-1-1-1zM27 0h-6c-0.553 0-1 0.448-1 1v30c0 0.553 0.447 1 1 1h6c0.553 0 1-0.447 1-1v-30c0-0.552-0.447-1-1-1z"></path>\n'+'</svg>\n';var speechDom=document.querySelector(".vditor-speech");if(!speechDom){speechDom=document.createElement("div");speechDom.className="vditor-speech";document.body.insertAdjacentElement("beforeend",speechDom);speechDom.onclick=function(){if(speechDom.className==="vditor-speech"){var utterThis=speechDom.getAttribute("data-text");speak(utterThis);speechDom.className="vditor-speech vditor-speech--current";speechDom.innerHTML=pause_svg_1;}
+var selection=window.getSelection();selection.removeAllRanges();selection.addRange(window.vditorSpeechRange);};document.body.addEventListener("click",function(){if(getSelection().toString().trim()===""&&speechDom.style.display==="block"){speechDom.className="vditor-speech";speechSynthesis.cancel();speechDom.style.display="none";}});}
+document.addEventListener("mouseup",function(event){var text=getSelection().toString().trim();speechSynthesis.cancel();if(getSelection().toString().trim()===""){if(speechDom.style.display==="block"){speechDom.className="vditor-speech";speechDom.style.display="none";}
+return;}
+window.vditorSpeechRange=getSelection().getRangeAt(0).cloneRange();var rect=getSelection().getRangeAt(0).getBoundingClientRect();speechDom.innerHTML=play_svg_1;speechDom.style.display="block";speechDom.style.top=(rect.top+rect.height+document.querySelector("html").scrollTop-20)+"px";speechDom.style.left=(event.screenX+2)+"px";speechDom.setAttribute("data-text",text);});
+	
+	
+	// 。。。
+	
+/*	
+	   var play_svg_1 = '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">\n' +
+       '<path d="M6 0v32l20-15.977-20-16.023z"></path>\n' +
+       '</svg>\n';
+   var pause_svg_1 = '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">\n' +
+       '<path d="M11 0h-6c-0.553 0-1 0.448-1 1v30c0 0.553 0.447 1 1 1h6c0.553 0 1-0.447 1-1v-30c0-0.552-0.447-1-1-1zM27 0h-6c-0.553 0-1 0.448-1 1v30c0 0.553 0.447 1 1 1h6c0.553 0 1-0.447 1-1v-30c0-0.552-0.447-1-1-1z"></path>\n' +
+       '</svg>\n';
+    var speechDom = document.querySelector(".vditor-speech");
+    var lang = "zh_CN";
+    if (!speechDom) {
+        speechDom = document.createElement("div");
+        speechDom.className = "vditor-speech";
+        document.body.insertAdjacentElement("beforeend", speechDom);
+        var getVoice = function () {
+            var voices = speechSynthesis.getVoices();
+            var currentVoice;
+            var defaultVoice;
+            voices.forEach(function (item) {
+              if (item.lang === lang.replace("_", "-")) {
+                    currentVoice = item;
+                }
+                if (item["default"]) {
+                    defaultVoice = item;
+                }
+            });
+            if (!currentVoice) {
+                currentVoice = defaultVoice;
+            }
+            return currentVoice;
+        };
+        if (speechSynthesis.onvoiceschanged !== undefined) {
+            speechSynthesis.onvoiceschanged = getVoice;
+        }
+        var voice_1 = getVoice();
+        speechDom.onclick = function () {
+            if (speechDom.className === "vditor-speech") {
+                var utterThis = new SpeechSynthesisUtterance(speechDom.getAttribute("data-text"));
+                utterThis.voice = voice_1;
+                utterThis.onend = function () {
+                    speechDom.className = "vditor-speech";
+                    speechSynthesis.cancel();
+                    speechDom.innerHTML = play_svg_1;
+                };
+                speechSynthesis.speak(utterThis);
+                speechDom.className = "vditor-speech vditor-speech--current";
+                speechDom.innerHTML = pause_svg_1;
+            }
+            else {
+                if (speechSynthesis.speaking) {
+                    if (speechSynthesis.paused) {
+                        speechSynthesis.resume();
+                        speechDom.innerHTML = pause_svg_1;
+                    }
+                    else {
+                        speechSynthesis.pause();
+                        speechDom.innerHTML = play_svg_1;
+                    }
+                }
+            }
+            var selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(window.vditorSpeechRange);
+        };
+        document.body.addEventListener("click", function () {
+            if (getSelection().toString().trim() === "" && speechDom.style.display === "block") {
+                speechDom.className = "vditor-speech";
+                speechSynthesis.cancel();
+                speechDom.style.display = "none";
+            }
+        });
+    }
+   document.addEventListener("mouseup", function (event) {
+        var text = getSelection().toString().trim();
+        speechSynthesis.cancel();
+        if (getSelection().toString().trim() === "") {
+            if (speechDom.style.display === "block") {
+                speechDom.className = "vditor-speech";
+                speechDom.style.display = "none";
+            }
+            return;
+        }
+        window.vditorSpeechRange = getSelection().getRangeAt(0).cloneRange();
+        var rect = getSelection().getRangeAt(0).getBoundingClientRect();
+        speechDom.innerHTML = play_svg_1;
+        speechDom.style.display = "block";
+        speechDom.style.top = (rect.top + rect.height + document.querySelector("html").scrollTop - 20) + "px";
+        speechDom.style.left = (event.screenX + 2) + "px";
+        speechDom.setAttribute("data-text", text);
+    });*/
+</script>
+
+
+
 
 
 
