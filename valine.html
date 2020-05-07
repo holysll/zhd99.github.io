@@ -7,7 +7,8 @@
 <head>
 	<title>友情链接 -  hi mogul</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<meta name="description" content="最好的收藏,不过是分享">
+	<meta name="keywords" content="hi mogul,hexo-theme-dearmsdan一款Hexo主题宝钻蓝色，给你一种空灵的感觉,hexo简约主题,HEXO,dearmsdan.com" />
+	<meta name="description" content="dearmsdan基于Bootstrap 框架HEXO 强力驱动的一个宝钻蓝 色调给你一种空灵的感觉">
 	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<link rel="shortcut icon" href="/logo.png" type="image/png" />
@@ -112,8 +113,61 @@
 				</span>
 			</a>
 			
-			
 		</div>
+	
+	
+      <div class="mobile">
+        <div class="mobile-inner">
+          <div class="mobile-inner-header">
+            <div class="mobile-inner-header-icon mobile-inner-header-icon-out">
+				<span></span><span></span>
+			  </div>
+          </div>
+         	<div class="mobile-inner-nav"> 
+				
+				<a href="/" title="首页">
+					<span>
+						首页
+					</span>
+				</a>
+				
+				<a href="/about.html" title="关于">
+					<span>
+						关于
+					</span>
+				</a>
+				
+				<a href="/valine.html" title="评论区">
+					<span>
+						评论区
+					</span>
+				</a>
+				
+				<a href="/link.html" title="友情链接">
+					<span>
+						友情链接
+					</span>
+				</a>
+				
+			</div>
+        </div>
+    </div>
+	
+<script>
+	$(window).load(function () {
+	  $(".mobile-inner-header-icon").click(function(){
+	  	$(this).toggleClass("mobile-inner-header-icon-click mobile-inner-header-icon-out");
+	  	$(".mobile-inner-nav").slideToggle(250);
+	  });
+	  $(".mobile-inner-nav a").each(function( index ) {
+	  	$( this ).css({'animation-delay': (index/10)+'s'});
+	  });
+	});
+</script>
+	
+	
+	
+	
 	<div class="container-fluid">
 		<div class="navbar-btn" style="padding: 0; padding-top: 10px;">
 			<button type="button" class="btn-toggle-fullwidth btn-toggle-mx">
@@ -305,7 +359,7 @@
           </li>
         
           <li>
-            <a href="/2019/12/30/sql/1912301045/">windows My sql 解压版安装方法</a>
+            <a href="/2019/12/30/java/1912300034/">java环境变量配置</a>
           </li>
         
       </ul>
@@ -442,7 +496,7 @@
 
 <footer class="footer">	
 	<div class="footer-content">
-		感谢<span></span><a style='color: #00bbff;font-weight: bolder;' href='https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral' target="_blank" rel="noopener"><img style='width: 93px; position: relative;top: -2px;' src='https://cdn.dearmsdan.com/upyun_logo5.png' /></a> 提供强力云存储服务 | <a style='color:#f66464;font-weight: bolder;' href='https://www.dnspod.cn/' target="_blank" rel="noopener">dnspod </a>提供 DNS 解析服务|  <a style='color:#ea9000;font-weight: bolder;' href='https://valine.js.org/' target="_blank" rel="noopener"> Valine</a>提供快速、简洁且高效的评论系统 <br/>
+		感谢<span></span><a style='color: #00bbff;font-weight: bolder;' href='https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral' target="_blank" rel="noopener"><img class='fooimg' style='width: 93px; position: relative;top: -2px;' src='https://cdn.dearmsdan.com/upyun_logo5.png' /></a> 提供强力云存储服务 | <a style='color:#f66464;font-weight: bolder;' href='https://www.dnspod.cn/' target="_blank" rel="noopener">dnspod </a>提供 DNS 解析服务|  <a style='color:#ea9000;font-weight: bolder;' href='https://valine.js.org/' target="_blank" rel="noopener"> Valine</a>提供快速、简洁且高效的评论系统 <br/>
 	© 2020 hi mogul.  
 	
 	 <span id="dearmsdan-time-box"> 
