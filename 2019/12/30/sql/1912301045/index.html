@@ -16,7 +16,9 @@
 	<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_1605171_vyrb401junl.css">
 	
 	<link rel="stylesheet" type="text/css" href="/css/bootstrap-3.3.4.css">
-	<link rel="stylesheet" href="/css/style.css">
+	
+<link rel="stylesheet" href="/css/style.css">
+
 	
 	<link rel="stylesheet" type="text/css" href="/css/avatar_user.css">
 	
@@ -34,7 +36,9 @@
 	
 	
 	<script src="/js/jquery1.10.2.min.js"></script>
-	<script src="/js/app.js"></script>
+	
+<script src="/js/app.js"></script>
+
 	<script src="/js/bootstrap-3.3.4.js"></script>
 	
 	<script src="/js/jquery.slimscroll.min.js"></script>
@@ -59,7 +63,7 @@
 	<script src="/js/pjax/index.js"></script>
 	
 	
-</head>
+<meta name="generator" content="Hexo 4.2.0"></head>
 
 
 
@@ -385,7 +389,7 @@
 <aside id="article-toc" class="fixed-toc">
     <div id="article-toc-inner">
         <strong class="sidebar-title">目录</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">下载解压版mysql</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">安装配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">安装中出现的mysqld: Can’t create/write to file ‘D:问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">设置 修改 sql中root用户的密码</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#下载解压版mysql"><span class="toc-text">下载解压版mysql</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装配置"><span class="toc-text">安装配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装中出现的mysqld-Can’t-create-write-to-file-‘D-问题"><span class="toc-text">安装中出现的mysqld: Can’t create&#x2F;write to file ‘D:问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#设置-修改-sql中root用户的密码"><span class="toc-text">设置 修改 sql中root用户的密码</span></a></li></ol>
     </div>
 </aside>
 </div>
@@ -430,17 +434,11 @@
 
 <!-- toc -->
 
-<ul>
-<li><a href="#下载解压版mysql"><strong>下载解压版mysql</strong></a></li>
-<li><a href="#安装配置"><strong>安装配置</strong></a></li>
-<li><a href="#安装中出现的mysqld-cant-createwrite-to-file-d问题"><strong>安装中出现的mysqld: Can’t create/write to file ‘D:问题</strong></a></li>
-<li><a href="#设置-修改-sql中root用户的密码"><strong>设置 修改 sql中root用户的密码</strong></a></li>
-</ul>
-<!-- tocstop -->
 
-<h2><span id="下载解压版mysql"><strong>下载解压版mysql</strong></span></h2><p>通过以下链接下载需要的mysql</p>
+
+<h2 id="下载解压版mysql"><a href="#下载解压版mysql" class="headerlink" title="下载解压版mysql"></a><strong>下载解压版mysql</strong></h2><p>通过以下链接下载需要的mysql</p>
 <p><a href="https://dev.mysql.com/downloads/workbench/" target="_blank" rel="noopener">https://dev.mysql.com/downloads/workbench/</a></p>
-<h2><span id="安装配置"><strong>安装配置</strong></span></h2><ol>
+<h2 id="安装配置"><a href="#安装配置" class="headerlink" title="安装配置"></a><strong>安装配置</strong></h2><ol>
 <li><p>首先解压你下载的安装包，得到一个名为mysql…的文件夹</p>
 </li>
 <li><p>把这个文件夹移动到你想安装mysql的地方，也就是你移动到的目录就是安装mysql的目录，比如我的放在D:\mysql-5.7.17-winx64下面</p>
@@ -448,24 +446,8 @@
 <li><p>打开我的电脑-&gt;属性-&gt;高级-&gt;环境变量，在系统变量里选择PATH,在其后面添加: 你的mysql bin文件夹的路径 (如:D:\mysql-5.7.17-winx64\bin )，注意是追加,不是覆盖 ，然后确定</p>
 </li>
 <li><p>配置默认文件<br>解压后的文件如果有默认的配置文件（my-default.ini）没有新建，配置如下（如果是5.7 版本新建文件my.ini）</p>
-<pre><code class="markdown">[mysql]
-# 设置mysql客户端默认字符集
-default-character-set=utf8 
-[mysqld]
-#设置3306端口
-port = 3306 
-# [mysqld] 加上下面一句可以跳过密码进入mysql:
-# skip-grant-tables
-# 设置mysql的安装目录
-basedir=&quot;D:\mysql-5.7.17-winx64&quot;
-# 设置mysql数据库的数据的存放目录
-datadir=&quot;D:\mysql-5.7.17-winx64\data&quot;
-# 允许最大连接数
-max_connections=200
-# 服务端使用的字符集默认为8比特编码的latin1字符集
-character-set-server=utf8
-# 创建新表时将使用的默认存储引擎
-default-storage-engine=INNODB </code></pre>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">[mysql]</span><br><span class="line"><span class="section"># 设置mysql客户端默认字符集</span></span><br><span class="line">default-character-set=utf8 </span><br><span class="line">[mysqld]</span><br><span class="line"><span class="section">#设置3306端口</span></span><br><span class="line">port = 3306 </span><br><span class="line"><span class="section"># [mysqld] 加上下面一句可以跳过密码进入mysql:</span></span><br><span class="line"><span class="section"># skip-grant-tables</span></span><br><span class="line"><span class="section"># 设置mysql的安装目录</span></span><br><span class="line">basedir="D:\mysql-5.7.17-winx64"</span><br><span class="line"><span class="section"># 设置mysql数据库的数据的存放目录</span></span><br><span class="line">datadir="D:\mysql-5.7.17-winx64\data"</span><br><span class="line"><span class="section"># 允许最大连接数</span></span><br><span class="line">max_connections=200</span><br><span class="line"><span class="section"># 服务端使用的字符集默认为8比特编码的latin1字符集</span></span><br><span class="line">character-set-server=utf8</span><br><span class="line"><span class="section"># 创建新表时将使用的默认存储引擎</span></span><br><span class="line">default-storage-engine=INNODB</span><br></pre></td></tr></table></figure>
+
 </li>
 </ol>
 <p>​    5.以管理员身份运行cmd（一定要用管理员身份运行，不然权限不够），输入命令 cd D:\mysql-5.7.17-winx64\bin  回车</p>
@@ -479,18 +461,14 @@ default-storage-engine=INNODB </code></pre>
 <li>要求输入密码，刚刚安装完是没有密码的，直接回车</li>
 <li>看到已经进入了mysql，我们输入show databases; 回车可以看到数据库已经显示出来了</li>
 </ol>
-<h2><span id="安装中出现的mysqld-cant-createwrite-to-file-d问题"><strong>安装中出现的mysqld: Can’t create/write to file ‘D:问题</strong></span></h2><p>在 安装配置  4 提到的 my-default.ini  或 my.ini 文件内修改</p>
+<h2 id="安装中出现的mysqld-Can’t-create-write-to-file-‘D-问题"><a href="#安装中出现的mysqld-Can’t-create-write-to-file-‘D-问题" class="headerlink" title="安装中出现的mysqld: Can’t create/write to file ‘D:问题"></a><strong>安装中出现的mysqld: Can’t create/write to file ‘D:问题</strong></h2><p>在 安装配置  4 提到的 my-default.ini  或 my.ini 文件内修改</p>
 <p><code>basedir="D:\mysql-5.7.17-winx64"</code></p>
 <p><code>datadir="D:\mysql-5.7.17-winx64\data"</code></p>
-<pre><code class="mysql">
-# &quot;\&quot;应该用&quot;\\&quot;代替，然后问题就解决了
-basedir=&quot;D:\\mysql-5.7.17-winx64&quot;
-datadir=&quot;D:\\mysql-5.7.17-winx64\data&quot;
-</code></pre>
-<h2><span id="设置-修改-sql中root用户的密码"><strong>设置 修改 sql中root用户的密码</strong></span></h2><p>设置<br>1.为root设置密码</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"># &quot;\&quot;应该用&quot;\\&quot;代替，然后问题就解决了</span><br><span class="line">basedir&#x3D;&quot;D:\\mysql-5.7.17-winx64&quot;</span><br><span class="line">datadir&#x3D;&quot;D:\\mysql-5.7.17-winx64\data&quot;</span><br></pre></td></tr></table></figure>
+
+<h2 id="设置-修改-sql中root用户的密码"><a href="#设置-修改-sql中root用户的密码" class="headerlink" title="设置 修改 sql中root用户的密码"></a><strong>设置 修改 sql中root用户的密码</strong></h2><p>设置<br>1.为root设置密码</p>
 <p>cd C:\mysql-8.0.12-winx64\bin     mysql -u root -p;<br>alter user ‘root’@’localhost’ identified by ‘123’;<br>修改<br>1.在电脑搜索框输入cmd，再右键以管理员打开命令行窗口 。打开后输入 net stop mysql 停止mysql服务<br>2.停止服务后，使用无验证方式启动mysql服务： mysqld –skip-grant-tables<br>3.另打开新的cmd窗口,直接输入mysql命令，敲回车。就可以无密码登录成功<br>4.登录后输入use mysql;</p>
-<pre><code class="mysql">  mysql&gt; use mysql;
-  Database changed</code></pre>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; use mysql;</span><br><span class="line">Database changed</span><br></pre></td></tr></table></figure>
 <p>5.改密码：update user set password=password(“123”) where user=”root”;（别忘了最后加分号） 。 </p>
 <p>出现Unknown column ‘password’ in ‘field list’</p>
 <p>采用如下语句来更新，因为新版本mysql采用authentication_string替代了password字段</p>
@@ -580,7 +558,7 @@ datadir=&quot;D:\\mysql-5.7.17-winx64\data&quot;
 
 <footer class="footer">	
 	<div class="footer-content">
-		感谢<a style='color: #00bbff;font-weight: bolder;' href='https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral' target="_blank" rel="noopener">又拍云</a> 提供强力云存储服务 |  <a style='color:#f66464;font-weight: bolder;' href='https://www.dnspod.cn/' target="_blank" rel="noopener">dnspod </a>提供 DNS 解析服务|  <a style='color:#ea9000;font-weight: bolder;' href='https://valine.js.org/' target="_blank" rel="noopener"> Valine</a>提供快速、简洁且高效的评论系统 <br/>
+		感谢<span></span><a style='color: #00bbff;font-weight: bolder;' href='https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral' target="_blank" rel="noopener"><img style='width: 93px; position: relative;top: -2px;' src='https://cdn.dearmsdan.com/upyun_logo5.png' /></a> 提供强力云存储服务 | <a style='color:#f66464;font-weight: bolder;' href='https://www.dnspod.cn/' target="_blank" rel="noopener">dnspod </a>提供 DNS 解析服务|  <a style='color:#ea9000;font-weight: bolder;' href='https://valine.js.org/' target="_blank" rel="noopener"> Valine</a>提供快速、简洁且高效的评论系统 <br/>
 	© 2020 hi mogul.  
 	
 	 <span id="dearmsdan-time-box"> 

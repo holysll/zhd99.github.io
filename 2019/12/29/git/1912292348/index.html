@@ -16,7 +16,9 @@
 	<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_1605171_vyrb401junl.css">
 	
 	<link rel="stylesheet" type="text/css" href="/css/bootstrap-3.3.4.css">
-	<link rel="stylesheet" href="/css/style.css">
+	
+<link rel="stylesheet" href="/css/style.css">
+
 	
 	<link rel="stylesheet" type="text/css" href="/css/avatar_user.css">
 	
@@ -34,7 +36,9 @@
 	
 	
 	<script src="/js/jquery1.10.2.min.js"></script>
-	<script src="/js/app.js"></script>
+	
+<script src="/js/app.js"></script>
+
 	<script src="/js/bootstrap-3.3.4.js"></script>
 	
 	<script src="/js/jquery.slimscroll.min.js"></script>
@@ -59,7 +63,7 @@
 	<script src="/js/pjax/index.js"></script>
 	
 	
-</head>
+<meta name="generator" content="Hexo 4.2.0"></head>
 
 
 
@@ -387,7 +391,7 @@
 <aside id="article-toc" class="fixed-toc">
     <div id="article-toc-inner">
         <strong class="sidebar-title">目录</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">问题：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">是因为在创建git文件夹的时候信息不完善导致的</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">解决方法（一）：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">解决方法（二）：</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#问题："><span class="toc-text">问题：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#是因为在创建git文件夹的时候信息不完善导致的"><span class="toc-text">是因为在创建git文件夹的时候信息不完善导致的</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#解决方法（一）："><span class="toc-text">解决方法（一）：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#解决方法（二）："><span class="toc-text">解决方法（二）：</span></a></li></ol>
     </div>
 </aside>
 </div>
@@ -432,21 +436,7 @@
 
 <!-- toc -->
 
-<ul>
-<li><a href="#问题"><strong>问题：</strong></a><ul>
-<li><a href="#是因为在创建git文件夹的时候信息不完善导致的">是因为在创建git文件夹的时候信息不完善导致的</a></li>
-</ul>
-</li>
-<li><a href="#解决方法一"><strong>解决方法（一）：</strong></a></li>
-<li><a href="#解决方法二"><strong>解决方法（二）：</strong></a><ul>
-<li><a href="#是默认">↑是默认</a></li>
-<li><a href="#设置以下">设置以下</a></li>
-</ul>
-</li>
-</ul>
-<!-- tocstop -->
-
-<h2><span id="问题"><strong>问题：</strong></span></h2><p>git上传包提交时出现：Please tell me who you are.如下代码：</p>
+<h2 id="问题："><a href="#问题：" class="headerlink" title="问题："></a><strong>问题：</strong></h2><p>git上传包提交时出现：Please tell me who you are.如下代码：</p>
 <pre>
 <code>
     *** Please tell me who you are.
@@ -463,8 +453,8 @@ Branch 'master' set up to track remote branch 'master' from 'https://github.com/
     </code></pre>
 
 
-<h3><span id="是因为在创建git文件夹的时候信息不完善导致的">是因为在创建git文件夹的时候信息不完善导致的</span></h3><h2><span id="解决方法一"><strong>解决方法（一）：</strong></span></h2><p>通过命令行修改git 上传的配置信息<br>在命令行中执行：<br><code>git config --global user.email "你的邮箱"</code><br><code>git config --global user.name "你的名字"</code></p>
-<h2><span id="解决方法二"><strong>解决方法（二）：</strong></span></h2><p>通过手动修改git 上传提交的配置信息<br>在需要上传的文件夹下找到隐藏的 .git 文件夹<br>打开里面的config文件</p>
+<h3 id="是因为在创建git文件夹的时候信息不完善导致的"><a href="#是因为在创建git文件夹的时候信息不完善导致的" class="headerlink" title="是因为在创建git文件夹的时候信息不完善导致的"></a>是因为在创建git文件夹的时候信息不完善导致的</h3><h2 id="解决方法（一）："><a href="#解决方法（一）：" class="headerlink" title="解决方法（一）："></a><strong>解决方法（一）：</strong></h2><p>通过命令行修改git 上传的配置信息<br>在命令行中执行：<br><code>git config --global user.email "你的邮箱"</code><br><code>git config --global user.name "你的名字"</code></p>
+<h2 id="解决方法（二）："><a href="#解决方法（二）：" class="headerlink" title="解决方法（二）："></a><strong>解决方法（二）：</strong></h2><p>通过手动修改git 上传提交的配置信息<br>在需要上传的文件夹下找到隐藏的 .git 文件夹<br>打开里面的config文件</p>
 <pre>
     <code>
 [core]
@@ -566,7 +556,7 @@ Branch 'master' set up to track remote branch 'master' from 'https://github.com/
 
 <footer class="footer">	
 	<div class="footer-content">
-		感谢<a style='color: #00bbff;font-weight: bolder;' href='https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral' target="_blank" rel="noopener">又拍云</a> 提供强力云存储服务 |  <a style='color:#f66464;font-weight: bolder;' href='https://www.dnspod.cn/' target="_blank" rel="noopener">dnspod </a>提供 DNS 解析服务|  <a style='color:#ea9000;font-weight: bolder;' href='https://valine.js.org/' target="_blank" rel="noopener"> Valine</a>提供快速、简洁且高效的评论系统 <br/>
+		感谢<span></span><a style='color: #00bbff;font-weight: bolder;' href='https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral' target="_blank" rel="noopener"><img style='width: 93px; position: relative;top: -2px;' src='https://cdn.dearmsdan.com/upyun_logo5.png' /></a> 提供强力云存储服务 | <a style='color:#f66464;font-weight: bolder;' href='https://www.dnspod.cn/' target="_blank" rel="noopener">dnspod </a>提供 DNS 解析服务|  <a style='color:#ea9000;font-weight: bolder;' href='https://valine.js.org/' target="_blank" rel="noopener"> Valine</a>提供快速、简洁且高效的评论系统 <br/>
 	© 2020 hi mogul.  
 	
 	 <span id="dearmsdan-time-box"> 
