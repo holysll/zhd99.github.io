@@ -5,13 +5,19 @@
   
 
 <head>
-	<title>友情链接 -  hi mogul</title>
+	<title>留言板 -  hi mogul</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<meta name="keywords" content="hi mogul,hexo-theme-dearmsdan一款Hexo主题宝钻蓝色，给你一种空灵的感觉,hexo简约主题,HEXO,dearmsdan.com" />
 	<meta name="description" content="dearmsdan基于Bootstrap 框架HEXO 强力驱动的一个宝钻蓝 色调给你一种空灵的感觉">
 	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<link rel="shortcut icon" href="/logo.png" type="image/png" />
+	
+	
+		 
+			<script type="text/javascript" src="//cdn.jsdelivr.net/npm/eruda"></script>
+			<script>eruda.init();</script>
+		
 	
 	
 	<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_1605171_vyrb401junl.css">
@@ -32,8 +38,6 @@
 	<link rel="stylesheet" type="text/css" href="/resources/toc/toc.css">  
 	
   <script type="text/javascript" src="/js/copycode/clipboard.min.js"></script>  
-	
-	
 	
 	
 	<script src="/js/jquery1.10.2.min.js"></script>
@@ -60,8 +64,8 @@
 	
 		 
 			<script src="/js/pjax/jquery.pjax.js"></script>
+			<script src="/js/pjax/index.js"></script>
 		
-	<script src="/js/pjax/index.js"></script>
 	
 	
 <meta name="generator" content="Hexo 4.2.0"></head>
@@ -101,9 +105,9 @@
 				</span>
 			</a>
 			
-			<a href="/valine.html" title="评论区">
+			<a href="/valine.html" title="留言板">
 				<span>
-					评论区
+					留言板
 				</span>
 			</a>
 			
@@ -137,9 +141,9 @@
 					</span>
 				</a>
 				
-				<a href="/valine.html" title="评论区">
+				<a href="/valine.html" title="留言板">
 					<span>
-						评论区
+						留言板
 					</span>
 				</a>
 				
@@ -421,12 +425,14 @@
 
 
 			<div class="main">
-				<div class="dearmsdan-bg"></div>
+				<div class="dearmsdan-bg">
+					<div class="div_bg"></div>
+				</div>
 				<div class="main-content">
 					
 <div class="dearmsdan-post" id="links">
   <article>
-    <p>评论区，请大佬任意发炎<br>如果有什么问题<br>或者反馈都可以<br>发送在评论区<br>或者在 <a href="https://gitee.com/zhd99/zhd99/issues" target="_blank" rel="noopener">码云</a>、 <a href="https://github.com/ZHD99/zhd99.github.io/issues" target="_blank" rel="noopener">GitHub</a>用 Issues 方式发送给我哦<br>添加友链<a href="/link.html">传送带 </a></p>
+    <p>留言板，请大佬任意发炎<br>如果有什么问题<br>或者反馈都可以<br>发送在评论区<br>或者在 <a href="https://gitee.com/zhd99/zhd99/issues" target="_blank" rel="noopener">码云</a>、 <a href="https://github.com/ZHD99/zhd99.github.io/issues" target="_blank" rel="noopener">GitHub</a>用 Issues 方式发送给我哦<br>添加友链<a href="/link.html">传送带 </a></p>
 <div id="vcomments"></div>
     <script>
         new Valine({
@@ -457,14 +463,14 @@
 	footer{    
 		position: static;
     	padding: 20px;
-		margin-top: 50px;
+		/*margin-top: 50px;*/
     	text-align: center;
 		font-size: inherit;
 }
 }
 	.footer{
     	padding: 20px;
-		margin-top: 50px;
+		/*margin-top: 50px;*/
     	text-align: center;
     	border-radius: 50px;
     	background: rgba(84, 76, 76, 0.08);
@@ -695,7 +701,7 @@ function timeElapse(date){
 <link href="/resources/meuplayer/css/player.css" rel="stylesheet" type="text/css" />
 
 
-<div id="jp_container_N" style='display: none;' class="jp-video jp-video-270p" role="application" aria-label="media player" style="left: 0px; height: 175px; bottom: 20px;">
+<div id="jp_container_N" class="jp-video jp-video-270p" role="application" aria-label="media player" style="left: 0px; height: 175px; bottom: 20px;">
 	<div class="jp-type-playlist">
 		<div id="jquery_jplayer_N" class="jp-jplayer" style="width: 90px; height: 90px;">	<img id="jp_poster_0" style="width: 90px; height: 90px; display: inline;" src="http://p1.music.126.net/OCGt5ln0lPPtPbVJ3VEKtA==/109951163020570422.jpg?param=130y130">
 			<audio id="jp_audio_0" preload="metadata" src="http://music.163.com/song/media/outer/url?id=31473269.mp3" title="默"></audio>
@@ -787,11 +793,9 @@ function timeElapse(date){
 <script type="text/javascript">
 if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
 }else{
-	// 懒得去改音乐播放自适应，移动设备关闭
-	$('#jp_container_N').css('display','block');
+	
 }
 </script>
-
 
 
 

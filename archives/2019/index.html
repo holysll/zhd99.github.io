@@ -14,6 +14,12 @@
 	<link rel="shortcut icon" href="/logo.png" type="image/png" />
 	
 	
+		 
+			<script type="text/javascript" src="//cdn.jsdelivr.net/npm/eruda"></script>
+			<script>eruda.init();</script>
+		
+	
+	
 	<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_1605171_vyrb401junl.css">
 	
 	<link rel="stylesheet" type="text/css" href="/css/bootstrap-3.3.4.css">
@@ -32,8 +38,6 @@
 	<link rel="stylesheet" type="text/css" href="/resources/toc/toc.css">  
 	
   <script type="text/javascript" src="/js/copycode/clipboard.min.js"></script>  
-	
-	
 	
 	
 	<script src="/js/jquery1.10.2.min.js"></script>
@@ -60,8 +64,8 @@
 	
 		 
 			<script src="/js/pjax/jquery.pjax.js"></script>
+			<script src="/js/pjax/index.js"></script>
 		
-	<script src="/js/pjax/index.js"></script>
 	
 	
 <meta name="generator" content="Hexo 4.2.0"></head>
@@ -101,9 +105,9 @@
 				</span>
 			</a>
 			
-			<a href="/valine.html" title="评论区">
+			<a href="/valine.html" title="留言板">
 				<span>
-					评论区
+					留言板
 				</span>
 			</a>
 			
@@ -137,9 +141,9 @@
 					</span>
 				</a>
 				
-				<a href="/valine.html" title="评论区">
+				<a href="/valine.html" title="留言板">
 					<span>
-						评论区
+						留言板
 					</span>
 				</a>
 				
@@ -421,7 +425,9 @@
 
 
 			<div class="main">
-				<div class="dearmsdan-bg"></div>
+				<div class="dearmsdan-bg">
+					<div class="div_bg"></div>
+				</div>
 				<div class="main-content">
 					
 <div class="dearmsdan">
@@ -575,14 +581,14 @@
 	footer{    
 		position: static;
     	padding: 20px;
-		margin-top: 50px;
+		/*margin-top: 50px;*/
     	text-align: center;
 		font-size: inherit;
 }
 }
 	.footer{
     	padding: 20px;
-		margin-top: 50px;
+		/*margin-top: 50px;*/
     	text-align: center;
     	border-radius: 50px;
     	background: rgba(84, 76, 76, 0.08);
@@ -813,7 +819,7 @@ function timeElapse(date){
 <link href="/resources/meuplayer/css/player.css" rel="stylesheet" type="text/css" />
 
 
-<div id="jp_container_N" style='display: none;' class="jp-video jp-video-270p" role="application" aria-label="media player" style="left: 0px; height: 175px; bottom: 20px;">
+<div id="jp_container_N" class="jp-video jp-video-270p" role="application" aria-label="media player" style="left: 0px; height: 175px; bottom: 20px;">
 	<div class="jp-type-playlist">
 		<div id="jquery_jplayer_N" class="jp-jplayer" style="width: 90px; height: 90px;">	<img id="jp_poster_0" style="width: 90px; height: 90px; display: inline;" src="http://p1.music.126.net/OCGt5ln0lPPtPbVJ3VEKtA==/109951163020570422.jpg?param=130y130">
 			<audio id="jp_audio_0" preload="metadata" src="http://music.163.com/song/media/outer/url?id=31473269.mp3" title="默"></audio>
@@ -905,11 +911,9 @@ function timeElapse(date){
 <script type="text/javascript">
 if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
 }else{
-	// 懒得去改音乐播放自适应，移动设备关闭
-	$('#jp_container_N').css('display','block');
+	
 }
 </script>
-
 
 
 

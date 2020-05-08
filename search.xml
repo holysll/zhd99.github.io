@@ -325,25 +325,6 @@
 </li>
 </ul>
 <p><a href="https://link.jianshu.com?t=https%3A%2F%2Fwww.baidu.com%2Flink%3Furl%3DvUfE2amYdxd0-eyzqayeMFOVKkDRJrtkb1dV1MxyoCEke31DbXM_rb8fy1qDh1o0tqcq9u_fKQG1RRqPKTB_YK%26wd%3D%26eqid%3D8a6c88e90000a679000000035aa6444d" target="_blank" rel="noopener">HTML特殊字符编码对照表</a></p>
-<style>
-    .nexmoe-copyright{-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);-ms-filter:grayscale(100%);-o-filter:grayscale(100%)}
-#grayscale{
-       background-image: url(http://cdn.zhd99.cn/saying.gif);
-    /* background-image: url(https://imgsa.baidu.com/%B2%DD%C3%B1%C0%EF%B5%C4%E9%D9%D7%D3/pic/item/d97ca63….jpg?v=tbs?v=tbs); */
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    height: 200px;
-}
-
-</style>
-<script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
-<script>
-$(window).load(function(){
-    $('.nexmoe-comment').css('background-color','#fff');
-});
-</script>
-
 ]]></content>
       <categories>
         <category>博客</category>
@@ -675,6 +656,9 @@ var data2={files:[{id:0,pid:-1,title:'hexo-blog'},
 {id:723111,pid:72311,title:'copyright.ejs    // 文章页脚版权声明'},
 {id:723112,pid:72311,title:'paginator.ejs     // 分页块'},
 {id:72312,pid:7231,title:'_footer    //网页底部内容的部分'},
+{id:723121,pid:72312,title:'_comment  // 文章评论模板目录'},
+{id:7231211,pid:723121,title:'valine.ejs  // valine评论系统'},
+{id:723122,pid:72312,title:'comment.ejs 文章评论模板判断'},
 {id:72313,pid:7231,title:'_head   //网页头部内容部分'},
 {id:723131,pid:72313,title:'search.ejs  // 第三方插件 搜索'},
 {id:723132,pid:72313,title:'sidebar.ejs     //侧边栏'},
@@ -983,6 +967,45 @@ return arr;}
       </tags>
   </entry>
   <entry>
+    <title>2020 抗击新冠肺炎疫情斗争牺牲烈士和逝世同胞的深切哀悼</title>
+    <url>/2020/04/04/course/20200404/</url>
+    <content><![CDATA[<h4 id="缅怀英雄-深切悼念"><a href="#缅怀英雄-深切悼念" class="headerlink" title="缅怀英雄 深切悼念"></a>缅怀英雄 深切悼念</h4><p></p>
+<a id="more"></a>
+
+<!-- toc -->
+
+<center style="display: inline-block;
+    float: left;">
+<img src="https://cdn.dearmsdan.com/festival/0404.jpg" alt=' '/>
+</br>
+</center>
+
+<blockquote>
+<p>（4月3日）发布公告，决定2020年4月4日举行全国性哀悼活动。<br>在此期间，全国和驻外使领馆下半旗志哀，全国停止公共娱乐活动。<br>4月4日10时起，全国人民默哀3分钟，汽车、火车、舰船鸣笛，防空警报鸣响。</p>
+</blockquote>
+<p>今日10点是全国哀悼日，沉痛悼念在这次新冠疫情中抗疫的英雄们。</p>
+<p>在这次抗疫中医务工作人员、警察安保人员、公务人员在前线为我们抵挡这病毒的侵害，但是很多工作人员因为在抗疫过程中感染病毒或者工作过劳不幸离开了我们，我们并没有忘记他们。</p>
+<p>他们是我们的亲人也是我们的英雄，为了表示对他们的尊重和纪念国务院把今年的清明节定位全国哀悼日，今天全国下降半旗，北京时间10点全国默哀三分钟，来致敬英雄们。</p>
+<p>各省、自治区、直辖市人民政府，国务院各部委、各直属机构：</p>
+<p>为表达全国各族人民对抗击新冠肺炎疫情斗争牺牲烈士和逝世同胞的深切哀悼，国务院决定，2020年4月4日举行全国性哀悼活动。</p>
+<p>在此期间，全国和驻外使领馆下半旗志哀，全国停止公共娱乐活动。4月4日10时起，全国人民默哀3分钟，汽车、火车、舰船鸣笛，防空警报鸣响。</p>
+<script>
+    $('html').css({
+            'filter':'grayscale(100%)',
+        });
+    $('a').click(function(){
+          $('html').css({
+            'filter':'grayscale(0%)',
+        });
+    });
+</script>
+
+
+
+
+]]></content>
+  </entry>
+  <entry>
     <title>git Please tell me who you are.</title>
     <url>/2019/12/29/git/1912292348/</url>
     <content><![CDATA[<p>git 上传代码出现的问题!Please tell me who you are.</p>
@@ -1036,45 +1059,6 @@ Branch 'master' set up to track remote branch 'master' from 'https://github.com/
       <tags>
         <tag>git</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>2020 抗击新冠肺炎疫情斗争牺牲烈士和逝世同胞的深切哀悼</title>
-    <url>/2020/04/04/course/20200404/</url>
-    <content><![CDATA[<h4 id="缅怀英雄-深切悼念"><a href="#缅怀英雄-深切悼念" class="headerlink" title="缅怀英雄 深切悼念"></a>缅怀英雄 深切悼念</h4><p></p>
-<a id="more"></a>
-
-<!-- toc -->
-
-<center style="display: inline-block;
-    float: left;">
-<img src="https://cdn.dearmsdan.com/festival/0404.jpg" alt=' '/>
-</br>
-</center>
-
-<blockquote>
-<p>（4月3日）发布公告，决定2020年4月4日举行全国性哀悼活动。<br>在此期间，全国和驻外使领馆下半旗志哀，全国停止公共娱乐活动。<br>4月4日10时起，全国人民默哀3分钟，汽车、火车、舰船鸣笛，防空警报鸣响。</p>
-</blockquote>
-<p>今日10点是全国哀悼日，沉痛悼念在这次新冠疫情中抗疫的英雄们。</p>
-<p>在这次抗疫中医务工作人员、警察安保人员、公务人员在前线为我们抵挡这病毒的侵害，但是很多工作人员因为在抗疫过程中感染病毒或者工作过劳不幸离开了我们，我们并没有忘记他们。</p>
-<p>他们是我们的亲人也是我们的英雄，为了表示对他们的尊重和纪念国务院把今年的清明节定位全国哀悼日，今天全国下降半旗，北京时间10点全国默哀三分钟，来致敬英雄们。</p>
-<p>各省、自治区、直辖市人民政府，国务院各部委、各直属机构：</p>
-<p>为表达全国各族人民对抗击新冠肺炎疫情斗争牺牲烈士和逝世同胞的深切哀悼，国务院决定，2020年4月4日举行全国性哀悼活动。</p>
-<p>在此期间，全国和驻外使领馆下半旗志哀，全国停止公共娱乐活动。4月4日10时起，全国人民默哀3分钟，汽车、火车、舰船鸣笛，防空警报鸣响。</p>
-<script>
-    $('html').css({
-            'filter':'grayscale(100%)',
-        });
-    $('a').click(function(){
-          $('html').css({
-            'filter':'grayscale(0%)',
-        });
-    });
-</script>
-
-
-
-
-]]></content>
   </entry>
   <entry>
     <title>java环境变量配置</title>
@@ -1161,33 +1145,6 @@ Branch 'master' set up to track remote branch 'master' from 'https://github.com/
       </tags>
   </entry>
   <entry>
-    <title>windows 禁止更新的问题</title>
-    <url>/2019/12/31/sys/win/1912311726/</url>
-    <content><![CDATA[<p>windows 禁止更新的问题</p>
-<a id="more"></a>
-
-<!-- toc -->
-
-
-
-<h2 id="禁止windows-10-更新-下载"><a href="#禁止windows-10-更新-下载" class="headerlink" title="禁止windows 10 更新 下载."></a><strong>禁止windows 10 更新 下载.</strong></h2><p>系统的自动更新并没有什么影响，</p>
-<p>但是可能会出现经常弹出提醒更新的窗口，<br>如果不希望总是被更新提醒所打扰，所以选择关闭自动更新</p>
-<p>禁止Windows更新软件：</p>
-<p>链接: <a href="https://pan.baidu.com/s/1t2Y-4eI6UN4Xm5aYSuE1-g" target="_blank" rel="noopener">https://pan.baidu.com/s/1t2Y-4eI6UN4Xm5aYSuE1-g</a> 提取码: mbmw</p>
-<h2 id="禁止windows-10-更新-下载问题！！！"><a href="#禁止windows-10-更新-下载问题！！！" class="headerlink" title="禁止windows 10 更新 下载问题！！！"></a><strong>禁止windows 10 更新 下载问题！！！</strong></h2><p>那么问题来了，主要禁止了什么呢？</p>
-<p>在我们需要使用 【windows 功能】的时候</p>
-<p><img src="https://cdn.dearmsdan.com/1912311726/1.png" alt="net"> <img src="https://cdn.dearmsdan.com/1912311726/2.png" alt="net2"></p>
-<p>主要 会影响使用【windows 功能】 </p>
-<p>在我们使用完了再使用软件禁止Windows 10更新就好了</p>
-]]></content>
-      <categories>
-        <category>操作系统</category>
-      </categories>
-      <tags>
-        <tag>Windows</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Linux中查看jdk安装目录、卸载jdk、rpm命令、rm命令参数</title>
     <url>/2020/04/29/sys/linux/20200429/</url>
     <content><![CDATA[<p>rpm -qa|grep gcj </p>
@@ -1260,6 +1217,33 @@ Branch 'master' set up to track remote branch 'master' from 'https://github.com/
       </categories>
       <tags>
         <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>windows 禁止更新的问题</title>
+    <url>/2019/12/31/sys/win/1912311726/</url>
+    <content><![CDATA[<p>windows 禁止更新的问题</p>
+<a id="more"></a>
+
+<!-- toc -->
+
+
+
+<h2 id="禁止windows-10-更新-下载"><a href="#禁止windows-10-更新-下载" class="headerlink" title="禁止windows 10 更新 下载."></a><strong>禁止windows 10 更新 下载.</strong></h2><p>系统的自动更新并没有什么影响，</p>
+<p>但是可能会出现经常弹出提醒更新的窗口，<br>如果不希望总是被更新提醒所打扰，所以选择关闭自动更新</p>
+<p>禁止Windows更新软件：</p>
+<p>链接: <a href="https://pan.baidu.com/s/1t2Y-4eI6UN4Xm5aYSuE1-g" target="_blank" rel="noopener">https://pan.baidu.com/s/1t2Y-4eI6UN4Xm5aYSuE1-g</a> 提取码: mbmw</p>
+<h2 id="禁止windows-10-更新-下载问题！！！"><a href="#禁止windows-10-更新-下载问题！！！" class="headerlink" title="禁止windows 10 更新 下载问题！！！"></a><strong>禁止windows 10 更新 下载问题！！！</strong></h2><p>那么问题来了，主要禁止了什么呢？</p>
+<p>在我们需要使用 【windows 功能】的时候</p>
+<p><img src="https://cdn.dearmsdan.com/1912311726/1.png" alt="net"> <img src="https://cdn.dearmsdan.com/1912311726/2.png" alt="net2"></p>
+<p>主要 会影响使用【windows 功能】 </p>
+<p>在我们使用完了再使用软件禁止Windows 10更新就好了</p>
+]]></content>
+      <categories>
+        <category>操作系统</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
       </tags>
   </entry>
 </search>

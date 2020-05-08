@@ -192,12 +192,24 @@ footer {
     text-align: right;
     font-size: 13px
 }
+.dearmsdan{
+	overflow-x: hidden;
+	overflow-y: auto;
+    padding: 30px 20px 20px;
+}
 .dearmsdan-bg{
-	background-color: #252c35;
+	background-color: rgba(215, 237, 255, 0.5);
 	background-image: url('https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302');	
 	width: 100%;
     height: 100%;
     opacity: 0.3;
+    position: fixed;
+    z-index: -1;
+}
+.dearmsdan-bg .div_bg{    
+	background-color: rgba(215, 237, 255, 0.5);
+    width: inherit;
+    height: inherit;
     position: fixed;
     z-index: -1;
 }
@@ -258,13 +270,7 @@ footer {
     position: relative;
     left: 260px
 }
-.main-content {
-    padding: 0;
-}
 
-.navbar+.main-content {
-    padding: 105px 0 28px 5px
-}
 
 
 html.fullscreen-bg,html.fullscreen-bg body,html.fullscreen-bg #dearmsdan {
@@ -306,7 +312,7 @@ html.fullscreen-bg,html.fullscreen-bg body,html.fullscreen-bg #dearmsdan {
     padding: 0;
     margin: 0;
     border: 0;
-	background-color: #c6d6f4de;
+	background-color: #c6d6f4;
 }
 
 .navbar-default .navbar-nav>.open>a,.navbar-default .navbar-nav>.open>a:hover,.navbar-default .navbar-nav>.open>a:focus {
@@ -655,15 +661,11 @@ background:#FF0BEE;
 ****  
 ***********
 */
-.main-content{        
-	box-shadow: rgba(161, 177, 204, 0.4) 0px 0px 1rem;    
-	background-color: #d7edff75;
-    min-height: 100vh;
+.main-content{
     overflow-x: hidden;
-    overflow-y: auto;
     padding: 30px 20px 20px;
 }
-.dearmsdan-post{    
+.dearmsdan-post{
 	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 }
 .dearmsdan-post:hover {
@@ -848,7 +850,7 @@ transform:translateY(4px) rotate(0deg)
 }
 }
 .mobile-inner-nav {    
-	background-color: #6ca4a9de;
+	background-color: rgba(108, 164, 169, 0.8);
     width: 100%;
     position: absolute;
     top: 80px;
@@ -1099,9 +1101,6 @@ figure td:nth-child(2) pre{
 	
 }
 @media screen and (max-width: 767px) {
-    .navbar+.main-content {
-        padding-top:155px
-    }
 }
 @media screen and (max-width: 1024px) {
     .navbar-default .brand {
@@ -1157,10 +1156,8 @@ figure td:nth-child(2) pre{
 	.mobile{
 		display: block;
 	}
-	.navbar-default{    
-		-moz-box-shadow: 0 0 15px #7770;
-		-webkit-box-shadow: 0 0 15px #7770;
-		box-shadow: 0 0 15px #7770;
+	#jp_container_N{
+		display:none;
 	}
 }
 
